@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>机床电路图的识读--X62W卧式万能铣床电气控制线路原理图举例（3）</title>
+      <link href="/2026/08/28/%E6%96%87%E7%AB%A0_13/"/>
+      <url>/2026/08/28/%E6%96%87%E7%AB%A0_13/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><img src="/img/cover_11.png" alt="X62W卧式万能铣床图"></p><hr><h3 id="冷却泵电动机M3控制"><a href="#冷却泵电动机M3控制" class="headerlink" title="冷却泵电动机M3控制"></a>冷却泵电动机M3控制</h3><p>这个控制非常的简单，所以在此不过多赘述<br><strong>冷却泵电动机M3</strong> 和<strong>主轴电动机M1</strong>采用主电路<strong>顺序控制</strong>，只有在<strong>主轴电动机M1</strong>启动后才能启动<br>他们由<strong>转换开关SQ2</strong>控制</p><h3 id="照明电路控制"><a href="#照明电路控制" class="headerlink" title="照明电路控制"></a>照明电路控制</h3><p><strong>电压：</strong>24V<br><strong>来源：</strong>控制<strong>变压器T1</strong>的<strong>二次侧</strong>输出<br><strong>照明灯</strong>：低压照明灯EL</p><p>对于<strong>低压照明灯EL</strong>的控制：</p><p><strong>元器件：</strong></p><ol><li>转换开关SA4</li><li>熔断器FU5（照明电路断路保护）</li></ol><p><strong>对此，我们已经完成了对于X62W万能铣床电气控制原理图（电路图）的全部分析</strong><br>接下来，让我们来回顾一下<strong>X62W万能铣床</strong>的电气元件吧。</p><p><strong>表 11-9 X62W 型卧式万能铣床的电气元件明细表</strong></p><div class="table-container"><table><thead><tr><th style="text-align:left">符号</th><th style="text-align:left">名称</th><th style="text-align:left">型号</th><th style="text-align:left">规格</th><th style="text-align:left">数量</th><th style="text-align:left">作用</th></tr></thead><tbody><tr><td style="text-align:left">M1</td><td style="text-align:left">主轴电动机</td><td style="text-align:left">Y132M-4-B3</td><td style="text-align:left">7.5 kW、380 V、1450 r/min</td><td style="text-align:left">1</td><td style="text-align:left">驱动主轴转动</td></tr><tr><td style="text-align:left">M2</td><td style="text-align:left">进给电动机</td><td style="text-align:left">Y90L-4</td><td style="text-align:left">1.5 kW、380 V、1400 r/min</td><td style="text-align:left">1</td><td style="text-align:left">驱动工作台进给运动</td></tr><tr><td style="text-align:left">M3</td><td style="text-align:left">冷却泵电动机</td><td style="text-align:left">JCB-22</td><td style="text-align:left">125 W、380 V、2790 r/min</td><td style="text-align:left">1</td><td style="text-align:left">驱动冷却泵转动，供给冷却液</td></tr><tr><td style="text-align:left">QS1</td><td style="text-align:left">转换开关</td><td style="text-align:left">HZ10-60/3J</td><td style="text-align:left">60 A, 380 V</td><td style="text-align:left">1</td><td style="text-align:left">电源总隔离开关</td></tr><tr><td style="text-align:left">QS2</td><td style="text-align:left">转换开关</td><td style="text-align:left">HZ10-10/3J</td><td style="text-align:left">10 A, 380 V</td><td style="text-align:left">1</td><td style="text-align:left">冷却泵电动机电源隔离开关</td></tr><tr><td style="text-align:left">SA1</td><td style="text-align:left">转换开关</td><td style="text-align:left">LS2-3A</td><td style="text-align:left"></td><td style="text-align:left">1</td><td style="text-align:left">换刀制动开关</td></tr><tr><td style="text-align:left">SA2</td><td style="text-align:left">转换开关</td><td style="text-align:left">HZ10-10/3J</td><td style="text-align:left">10 A, 380 V</td><td style="text-align:left">1</td><td style="text-align:left">圆工作台开关</td></tr><tr><td style="text-align:left">SA3</td><td style="text-align:left">转换开关</td><td style="text-align:left">HZ3-133</td><td style="text-align:left">10 A, 500 V</td><td style="text-align:left">1</td><td style="text-align:left">电动机 M1 换向开关</td></tr><tr><td style="text-align:left">SA4</td><td style="text-align:left">开关</td><td style="text-align:left"></td><td style="text-align:left"></td><td style="text-align:left">1</td><td style="text-align:left">控制照明灯</td></tr><tr><td style="text-align:left">FU1</td><td style="text-align:left">熔断器</td><td style="text-align:left">RL1-60</td><td style="text-align:left">60 A, 熔体 50A</td><td style="text-align:left">3</td><td style="text-align:left">主轴电动机短路保护</td></tr><tr><td style="text-align:left">FU2</td><td style="text-align:left">熔断器</td><td style="text-align:left">RL1-15</td><td style="text-align:left">15 A, 熔体 10A</td><td style="text-align:left">3</td><td style="text-align:left">进给电动机短路保护</td></tr><tr><td style="text-align:left">FU3</td><td style="text-align:left">熔断器</td><td style="text-align:left">RL1-15</td><td style="text-align:left">15 A, 熔体 4A</td><td style="text-align:left">1</td><td style="text-align:left">整流器短路保护</td></tr><tr><td style="text-align:left">FU4</td><td style="text-align:left">熔断器</td><td style="text-align:left">RL1-15</td><td style="text-align:left">15 A, 熔体 2A</td><td style="text-align:left">1</td><td style="text-align:left">电磁离合器短路保护</td></tr><tr><td style="text-align:left">FU5</td><td style="text-align:left">熔断器</td><td style="text-align:left">RL1-15</td><td style="text-align:left">15 A, 熔体 2A</td><td style="text-align:left">1</td><td style="text-align:left">照明电路短路保护</td></tr><tr><td style="text-align:left">FU6</td><td style="text-align:left">熔断器</td><td style="text-align:left">RL1-15</td><td style="text-align:left">15 A, 熔体 4A</td><td style="text-align:left">1</td><td style="text-align:left">控制电路短路保护</td></tr><tr><td style="text-align:left">FR1</td><td style="text-align:left">热继电器</td><td style="text-align:left">JR36-20</td><td style="text-align:left">整定电流 16 A</td><td style="text-align:left">1</td><td style="text-align:left">电动机 M1 过载保护</td></tr><tr><td style="text-align:left">FR2</td><td style="text-align:left">热继电器</td><td style="text-align:left">JR36-20</td><td style="text-align:left">整定电流 0.43 A</td><td style="text-align:left">1</td><td style="text-align:left">电动机 M3 过载保护</td></tr><tr><td style="text-align:left">FR3</td><td style="text-align:left">热继电器</td><td style="text-align:left">JR36-20</td><td style="text-align:left">整定电流 3.4 A</td><td style="text-align:left">1</td><td style="text-align:left">电动机 M2 过载保护</td></tr><tr><td style="text-align:left">T1</td><td style="text-align:left">照明变压器</td><td style="text-align:left">BK-50</td><td style="text-align:left">50 V·A, 380 V/24 V</td><td style="text-align:left">1</td><td style="text-align:left">提供照明电路电源</td></tr><tr><td style="text-align:left">TC</td><td style="text-align:left">控制变压器</td><td style="text-align:left">BK-150</td><td style="text-align:left">380 V/110 V</td><td style="text-align:left">1</td><td style="text-align:left">提供控制电路电源</td></tr><tr><td style="text-align:left">T2</td><td style="text-align:left">整流变压器</td><td style="text-align:left">BK-100</td><td style="text-align:left">380 V/36 V</td><td style="text-align:left">1</td><td style="text-align:left">提供整流电源</td></tr><tr><td style="text-align:left">KM1</td><td style="text-align:left">交流接触器</td><td style="text-align:left">CJ10-20</td><td style="text-align:left">20 A, 线圈电压 110 V</td><td style="text-align:left">1</td><td style="text-align:left">控制主轴电动机 M1</td></tr><tr><td style="text-align:left">KM2</td><td style="text-align:left">交流接触器</td><td style="text-align:left">CJ10-20</td><td style="text-align:left">10 A, 线圈电压 110 V</td><td style="text-align:left">1</td><td style="text-align:left">控制工作台快速移动电磁离合器</td></tr><tr><td style="text-align:left">KM3<br>KM4</td><td style="text-align:left">交流接触器</td><td style="text-align:left">CJ10-20</td><td style="text-align:left">10 A, 线圈电压 110 V</td><td style="text-align:left">2</td><td style="text-align:left">控制电动机 M2 正反转</td></tr><tr><td style="text-align:left">SB1<br>SB2</td><td style="text-align:left">起动按钮</td><td style="text-align:left">LA2</td><td style="text-align:left">绿色</td><td style="text-align:left">2</td><td style="text-align:left">主轴电动机 M1 起动</td></tr><tr><td style="text-align:left">SB3<br>SB4</td><td style="text-align:left">点动按钮</td><td style="text-align:left">LA2</td><td style="text-align:left">黑色</td><td style="text-align:left">2</td><td style="text-align:left">控制快速进给点动</td></tr><tr><td style="text-align:left">SB5<br>SB6</td><td style="text-align:left">停止按钮</td><td style="text-align:left">LA2</td><td style="text-align:left">红色</td><td style="text-align:left">2</td><td style="text-align:left">主轴电动机 M1 的停车及制动</td></tr><tr><td style="text-align:left">YC1</td><td style="text-align:left">电磁离合器</td><td style="text-align:left">BIDL-III</td><td style="text-align:left"></td><td style="text-align:left">1</td><td style="text-align:left">主轴制动</td></tr><tr><td style="text-align:left">YC2</td><td style="text-align:left">电磁离合器</td><td style="text-align:left">BIDL-III</td><td style="text-align:left"></td><td style="text-align:left">1</td><td style="text-align:left">正常进给</td></tr><tr><td style="text-align:left">YC3</td><td style="text-align:left">电磁离合器</td><td style="text-align:left">BIDL-III</td><td style="text-align:left"></td><td style="text-align:left">1</td><td style="text-align:left">快速进给</td></tr><tr><td style="text-align:left">SQ1</td><td style="text-align:left">位置开关</td><td style="text-align:left">LX3-11K</td><td style="text-align:left">开启式</td><td style="text-align:left">1</td><td style="text-align:left">主轴变速冲动开关</td></tr><tr><td style="text-align:left">SQ2</td><td style="text-align:left">位置开关</td><td style="text-align:left">LX3-11K</td><td style="text-align:left">开启式</td><td style="text-align:left">1</td><td style="text-align:left">进给变速冲动开关</td></tr><tr><td style="text-align:left">SQ3</td><td style="text-align:left">位置开关</td><td style="text-align:left">LX3-131</td><td style="text-align:left">单轮自动复位式</td><td style="text-align:left">1</td><td style="text-align:left">工作台向下、向前运动</td></tr><tr><td style="text-align:left">SQ4</td><td style="text-align:left">位置开关</td><td style="text-align:left">LX3-131</td><td style="text-align:left">单轮自动复位式</td><td style="text-align:left">1</td><td style="text-align:left">工作台向上、向后运动</td></tr><tr><td style="text-align:left">SQ5</td><td style="text-align:left">位置开关</td><td style="text-align:left">LX3-11K</td><td style="text-align:left">开启式</td><td style="text-align:left">1</td><td style="text-align:left">工作台向左运动</td></tr><tr><td style="text-align:left">SQ6</td><td style="text-align:left">位置开关</td><td style="text-align:left">LX3-11K</td><td style="text-align:left">开启式</td><td style="text-align:left">1</td><td style="text-align:left">工作台向右运动</td></tr><tr><td style="text-align:left">EL</td><td style="text-align:left">照明灯</td><td style="text-align:left"></td><td style="text-align:left"></td><td style="text-align:left">1</td><td style="text-align:left">机床低压照明</td></tr><tr><td style="text-align:left">VC</td><td style="text-align:left">整流器</td><td style="text-align:left">2CZ×4</td><td style="text-align:left">5 A, 50 V</td><td style="text-align:left">1</td><td style="text-align:left">整流后输出直流电压</td></tr></tbody></table></div><p>好了，以上就是今天对于<strong>机床电路图的识读—X62W卧式万能铣床的识读（三）</strong>完成了对于X62W万能铣床电气控制原理图（电路图）的全部分析，再见。<br>更多精彩内容请访问 publicstudio.dpdns.org</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> X62W </category>
+          
+          <category> 机床 </category>
+          
+          <category> 电器 </category>
+          
+          <category> 电气控制 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 工厂电器 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>机床电路图的识读--X62W卧式万能铣床电气控制线路原理图举例（2）</title>
+      <link href="/2026/08/27/%E6%96%87%E7%AB%A0_12/"/>
+      <url>/2026/08/27/%E6%96%87%E7%AB%A0_12/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><img src="/img/cover_11.png" alt="X62W卧式万能铣床图"></p><hr><h3 id="进给电动机M2控制"><a href="#进给电动机M2控制" class="headerlink" title="进给电动机M2控制"></a>进给电动机M2控制</h3><h4 id="工作台向上，向下，向前，向后进给运动的控制"><a href="#工作台向上，向下，向前，向后进给运动的控制" class="headerlink" title="工作台向上，向下，向前，向后进给运动的控制"></a>工作台向上，向下，向前，向后进给运动的控制</h4><p>控制此类运动的工具为<strong>操作手柄</strong>，一共有2个。每个手柄5个位置，相互<strong>互锁</strong>。也就是说：各个方向的进给运动<strong>不能同时进行。<br>各个手柄与</strong>位置开关SQ3<strong>和</strong>位置开关SQ4**相连接。</p><div class="table-container"><table><thead><tr><th>元器件</th><th>作用</th></tr></thead><tbody><tr><td><strong>SQ3</strong></td><td>控制工作台向<strong>下</strong>，向<strong>前</strong>运动</td></tr><tr><td><strong>SQ4</strong></td><td>控制工作台向<strong>上</strong>，向<strong>后</strong>运动</td></tr></tbody></table></div><p>他们之间的具体关系见下表：</p><div class="table-container"><table><thead><tr><th>手柄位置</th><th>工作台运动方向</th><th>离合器接通丝杠</th><th>位置开关动作</th><th>接触器动作</th><th>电动机运转方向</th></tr></thead><tbody><tr><td>上</td><td>向上进给<br>或快速向上</td><td>垂直进给丝杠</td><td><strong>SQ4</strong></td><td><strong>KM4</strong></td><td>反转</td></tr><tr><td>下</td><td>向下进给<br>或快速向下</td><td>垂直进给丝杠</td><td><strong>SQ3</strong></td><td><strong>KM3</strong></td><td>正转</td></tr><tr><td>中</td><td>升降或横向<br>进给停止</td><td></td><td>-</td><td>-</td><td>停止</td></tr><tr><td>前</td><td>向前进给<br>或快速向前</td><td>横向丝杠</td><td><strong>SQ3</strong></td><td><strong>KM3</strong></td><td>正转</td></tr><tr><td>后</td><td>向后进给<br>或快速向后</td><td>横向丝杠</td><td><strong>SQ4</strong></td><td><strong>KM4</strong></td><td>反转</td></tr></tbody></table></div><p><strong>详细过程：</strong></p><p>控制工作台向<strong>上</strong>，向<strong>后</strong>运动</p><ol><li>起动<strong>主轴电动机M1</strong></li><li>将<strong>操作手柄</strong>扳到<strong>向上</strong>或<strong>向后</strong>位置</li><li><strong>操作手柄联动机构</strong><br>（1）接通垂直传动丝杠的<strong>电磁离合器YC2</strong>，为垂直传动丝杠的转动做准备<br>（2）让<strong>位置开关SQ4</strong>动作</li><li>3-（2）=&gt;<strong>位置开关SQ4</strong>动断触点SQ4-2(17区,14-15)断开<br><strong>位置开关SQ4</strong>动合触点S04-1(18区,16-21)闭合</li><li><strong>接触器KM4线圈</strong>(18区)通电</li><li><strong>接触器KM4主触点</strong>闭合(4区)</li><li><strong>进给电动机M2反转</strong>，工作台向上或向后运动。</li><li><strong>接触器KM4</strong>动断触点(17区,17-18)断开联锁(使<strong>接触器KM3</strong>线圈(17区)不能同时通电动作)</li></ol><p>控制工作台向<strong>下</strong>，向<strong>前</strong>运动</p><ol><li>起动<strong>主轴电动机M1</strong></li><li>将<strong>操作手柄</strong>扳到<strong>向下</strong>或<strong>向前</strong>位置</li><li><strong>操作手柄联动机构</strong>接通垂直传动丝杠的<strong>电磁离合器YC2</strong>，压合<strong>位置开关SQ3</strong></li><li><strong>位置开关SQ3</strong>动断触点SQ3.2(17区,13-14)分断</li><li><strong>位置开关SQ3</strong>动合触点SQ3-1(17区,16-17)闭合</li><li><strong>接触器KM3</strong>线圈(17区)通电</li><li><strong>接触器KM3</strong>主触点闭合(5区)</li><li><strong>进给电动机M2</strong>正转，工作台向下或向前运动</li><li><strong>接触器KM3</strong>动断触点(18区,21-22)联锁，(使<strong>接触器KM4</strong>线圈不能同时通电动作)</li></ol><h4 id="工作台左，右进给运动的控制"><a href="#工作台左，右进给运动的控制" class="headerlink" title="工作台左，右进给运动的控制"></a>工作台左，右进给运动的控制</h4><p>控制此类运动的工具为<strong>操作手柄</strong>，一共有2个。<br>各个手柄与<strong>位置开关SQ5</strong>和<strong>位置开关SQ6</strong>相连接。</p><div class="table-container"><table><thead><tr><th>元器件</th><th>作用</th></tr></thead><tbody><tr><td><strong>SQ5</strong></td><td>控制工作台向<strong>左</strong>运动</td></tr><tr><td><strong>SQ6</strong></td><td>控制工作台向<strong>右</strong>运动</td></tr></tbody></table></div><p>他们之间的具体关系见下表：</p><div class="table-container"><table><thead><tr><th>手柄位置</th><th>工作台运动方向</th><th>离合器接通丝杠</th><th>位置开关动作</th><th>接触器动作</th><th>电动机运转方向</th></tr></thead><tbody><tr><td>左</td><td>向左进给<br>或快速向左</td><td>左右进给丝杠</td><td><strong>SQ5</strong></td><td><strong>KM3</strong></td><td>正转</td></tr><tr><td>中</td><td>停止</td><td>-</td><td>-</td><td>-</td><td>停止</td></tr><tr><td>右</td><td>向右进给<br>或快速向右</td><td>左右进给丝杠</td><td><strong>SQ6</strong></td><td><strong>KM4</strong></td><td>反转</td></tr></tbody></table></div><p><strong>详细过程：</strong></p><p>控制工作台向<strong>左</strong>运动</p><ol><li>起动<strong>主轴电动机M1</strong></li><li><strong>操作手柄</strong>向左扳</li><li><strong>操作手柄</strong>联动机构压合<strong>位置开关SQ5</strong></li><li><strong>位置开关SQ5</strong>动断触点SQ5-2(18区，19-20)分断</li><li><strong>位置开关SQ5</strong>动合触点SQ5-1(17区，16-17)闭合</li><li><strong>接触器KM3</strong>线圈通电</li><li><strong>接触器KM3</strong>主触点闭合</li><li><strong>进给电动机</strong>M2正转，拖动工作台向左运动</li><li><strong>接触器KM3</strong>辅助动断触点(18区,21-22)断开（对<strong>接触器KM4</strong>起联锁作用）</li></ol><p>控制工作台向<strong>右</strong>运动</p><ol><li>起动<strong>主轴电动机M1</strong>后，</li><li><strong>操作手柄</strong>向右扳</li><li><strong>操作手柄</strong>联动机构压合<strong>位置开关SQ6</strong></li><li><strong>位置开关SQ6</strong>动断触点SQ6-2(18区,20-15)分断</li><li><strong>位置开关SQ6</strong>动合触点SQ6-1(18区,16-21)闭合</li><li><strong>接触器KM4</strong>线圈通电</li><li><strong>接触器KM4</strong>主触点闭合</li><li><strong>进给电动机M2</strong>反转，拖动工作台向右运动</li><li><strong>接触器KM4</strong>辅助动断触点(17区,17-18)断开（对<strong>接触器KM3</strong>起联锁作用）</li></ol><p><strong>教材引用</strong></p><blockquote><p>在X62W型卧式万能铣床中，控制进给运动的4个操作手柄之间存在机械联锁关系，即将其中任何一个进给操作手柄置于某一进给运动方向时，其他进给操作手柄必须置于中间位置(不能置于某一进给运动方向)，否则将无法实现任何进给运动。这是因为在控制电路中对两者实行了联锁保护。例如，当把左右进给操作手柄扳向左时，若又将另一个进给操作手柄扳到向下进给方向，则位置开关 SQ5 和SQ3均被压下，它们的动断触点 SQ5-2和 SQ3-2均分断，断开了接触器KM3、KM4的通路，从而使电动机M2停转，保证了操作安全。<br>4个进给操作手柄被置于某一进给运动方向后，只能压下4个位置开关SQ3SQ4、SQ5、SQ6中的一个，接通进给电动机M2的正转或反转控制回路，同时通过机械机构将进给电动机M2的传动链与3根丝杠(左右丝杠、上下丝杠、前后丝杠)中的一根(且只有一根)丝杠搭合，驱动工作台沿选定的进给方向运动，而不会沿其他方向运动</p></blockquote><h4 id="工作台进给变速冲动控制"><a href="#工作台进给变速冲动控制" class="headerlink" title="工作台进给变速冲动控制"></a>工作台进给变速冲动控制</h4><ol><li>在改变工作台进给速度时，为了使齿轮易于啮合，也需要进给电动机M2瞬时中动一下。.</li><li>变速时，必须先将全部进给变速操作手柄扳到中间位置</li><li>然后将进给变速盘(在升降台前面)向外拉出</li><li>进给齿轮松开</li><li>转动变速盘选定进给速度</li><li>将变束盘快速推回原位</li><li>推进过程中，其联动机构瞬时压合<strong>位置开关SQ2</strong></li><li><strong>位置开关SQ2</strong>动断触点SQ2-2(17区,10-13)分断</li><li><strong>位置开关SQ2</strong>动合触点SQ2-1(17区,13-17)接通</li><li><strong>接触器KM3</strong>线圈通电动作</li><li><strong>进给电动机M2</strong>起动</li><li>手柄被快速推回到原位</li><li><strong>位置开关 SQ2</strong>复位</li><li><strong>接触器KM3</strong>线圈断电而释放</li><li><strong>进给电动机M2</strong>断电停转</li><li><strong>进给电动机M2</strong>瞬时点动,齿轮系统产生一次抖动，<strong>保证变速</strong>,齿轮易于啮合</li></ol><h4 id="工作台快速移动控制"><a href="#工作台快速移动控制" class="headerlink" title="工作台快速移动控制"></a>工作台快速移动控制</h4><ol><li>进给操作手柄扳到所需要的进给方向</li><li>按下<strong>快速移动按钮SB3</strong>或<strong>快速移动按钮SB4</strong>(<strong>两地控制</strong>)</li><li><strong>接触器KM2</strong>线圈通电</li><li><strong>接触器KM2</strong>动断触点(9区，105-107)分断</li><li><strong>电磁离合器YC2</strong>断电</li><li>齿轮传动链与进给丝杠分离</li><li><strong>接触器KM2</strong>的一对动合触点(10区105-108)闭合</li><li><strong>电磁离合器YC3</strong>通电</li><li><strong>进给电动机M2</strong>与<strong>进给丝杠</strong>直接搭合</li><li><strong>接触器KM2</strong>另一对动合触点(16区,9-10)闭合</li><li><strong>接触器KM3</strong>或<strong>接触器KM4线圈</strong>通电动作</li><li><strong>进给电动机M2</strong>通电正转或反转，带动工作台沿选定的方向快速移动</li><li><em>工作台的快速移动是点动控制</em>，<strong>快速移动按钮SB3</strong>或<strong>快速移动按钮SB4</strong>，快速移动停止</li></ol><h4 id="圆工作台运动的控制"><a href="#圆工作台运动的控制" class="headerlink" title="圆工作台运动的控制"></a>圆工作台运动的控制</h4><p><strong>控制方法</strong>：<strong>转换开关SA2</strong>控制</p><h5 id="需要圆工作台旋转时"><a href="#需要圆工作台旋转时" class="headerlink" title="需要圆工作台旋转时"></a>需要圆工作台旋转时</h5><ol><li>将4个<strong>进给操作手柄</strong>都扳到中间位置(零位)</li><li>使<strong>位置开关SQ3</strong>、<strong>位置开关SQ4</strong>、<strong>位置开关SQ5</strong>、<strong>位置开关SQ6</strong>全部处于正常位置(不动作)</li><li>接通<strong>转换开关SA2</strong></li><li><strong>转换开关SA2</strong>触点SA2-2闭合</li><li><strong>转换开关SA2</strong>触点SA2-1、<strong>转换开关SA2</strong>触点SA2-3分断</li><li>按下<strong>按钮SB1</strong>或<strong>按钮SB2</strong></li><li><strong>主轴电动机M1</strong>启动</li><li><strong>接触器KM3</strong>线圈通电动作</li><li><strong>进给电动机M2</strong>启动</li><li>按照需要移动的方向移动</li></ol><h5 id="不需要圆工作台旋转时"><a href="#不需要圆工作台旋转时" class="headerlink" title="不需要圆工作台旋转时"></a>不需要圆工作台旋转时</h5><ol><li><strong>转换开关SA2</strong>转到断开位置</li><li><strong>转换开关SA2</strong>触点SA2-1、 SA2-3闭合</li><li><strong>转换开关SA2</strong>触点SA2-2断开</li><li>圆工作台不能工作，而工作台在6个方向的进给运动可以正常进给。</li></ol><p><strong>教材引用</strong></p><blockquote><p>圆工作台不能反转，只能沿一个方向作回转运动。同时，圆工作台加工不需要调速。<br>由于圆工作台运动的控制回路需经过SQ3、SQ4、SQ5、SQ6四个位置开关的动断触点，所以在圆工作台工作时，其余进给一律不准运动，必须将进给手柄置于零位。若出现误操作，即扳动工作台任一进给操作手柄，都将使圆工作台停止工作，这就保证了工作台的进给运动与圆工作台工作不可能同时进行。<br>若按下主轴电动机M1停止按钮，主轴停转，圆工作台也同时停止运动。</p></blockquote><p>剩余内容详见<a href="https://publicstudio.dpdns.org/2026/08/28/%E6%96%87%E7%AB%A0_13/">机床电路图的识读—X62W卧式万能铣床的识读（三）</a></p><p>好了，以上就是今天对于<strong>机床电路图的识读—X62W卧式万能铣床的识读（二）</strong>再见。<br>更多精彩内容请访问 publicstudio.dpdns.org</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> X62W </category>
+          
+          <category> 机床 </category>
+          
+          <category> 电器 </category>
+          
+          <category> 电气控制 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 工厂电器 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>机床电路图的识读--X62W卧式万能铣床电气控制线路原理图举例（1）</title>
+      <link href="/2026/08/26/%E6%96%87%E7%AB%A0_11/"/>
+      <url>/2026/08/26/%E6%96%87%E7%AB%A0_11/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="机床电路图的识读—X62W卧式万能铣床"><a href="#机床电路图的识读—X62W卧式万能铣床" class="headerlink" title="机床电路图的识读—X62W卧式万能铣床"></a>机床电路图的识读—X62W卧式万能铣床</h1><p>现在，我们进行X62W万能铣床的<strong>电气控制原理图</strong>的识读。<br>通过之前的讲述，我们知道了所有电路图的识读方法，同时也识读了<strong>CA6140机床</strong>的电路图，那么，今天我们就来看看X62W卧式万能铣床，现在我们先展示电路图：<br><img src="/img/cover_11.png" alt="X62W卧式万能铣床图"></p><hr><h1 id="工作原理图的识别"><a href="#工作原理图的识别" class="headerlink" title="工作原理图的识别"></a>工作原理图的识别</h1><h2 id="主电路分析"><a href="#主电路分析" class="headerlink" title="主电路分析"></a>主电路分析</h2><p>X62W的<strong>主电路</strong>电路图由下图所示<br><img src="/img/11-1.png" alt="X62W卧式万能铣床图主电路"></p><p>主电路用到的电器元件如下：</p><blockquote><p>主轴电动机M1<br>进给电动机M2<br>冷却泵电动机M3<br>交流接触器KM1<br>交流接触器KM3<br>交流接触器KM4<br>组合开关SA3<br>转换开关QS2<br>热继电器FR1<br>热继电器FR2<br>热继电器FR3<br>熔断器FU1<br>熔断器FU2</p></blockquote><p>接下来我们对上面的元器件进行<strong>分类与整理</strong></p><div class="table-container"><table><thead><tr><th>名称与代号</th><th>作用</th><th>控制电器</th><th>过载保护电器</th><th>短路保护电器</th></tr></thead><tbody><tr><td>主轴电动机M1</td><td>驱动<strong>主轴</strong><br>带动铣刀旋转</td><td>交流接触器KM1<br>组合开关SA3</td><td>热继电器FR1</td><td>熔断器FU1</td></tr><tr><td>进给电动机M2</td><td>驱动<strong>进给运动</strong><br>和<strong>快速移动</strong></td><td>交流接触器KM3<br>交流接触器KM4</td><td>热继电器FR3</td><td>熔断器FU2</td></tr><tr><td>冷却泵电动机M3</td><td>供给冷却液</td><td>交流接触器KM1<br>转换开关QS2</td><td>热继电器FR2</td><td>熔断器FU1</td></tr></tbody></table></div><h2 id="控制电路分析"><a href="#控制电路分析" class="headerlink" title="控制电路分析"></a>控制电路分析</h2><p>X62W的<strong>主电路</strong>电路图由下图所示<br><img src="/img/11-2.png" alt="X62W卧式万能铣床图主电路"></p><h3 id="控制电路电源"><a href="#控制电路电源" class="headerlink" title="控制电路电源"></a>控制电路电源</h3><p><strong>控制电路的</strong>电源<strong>由</strong>变压器TC**输出110V交流电压供电</p><h3 id="主轴电动机M1控制"><a href="#主轴电动机M1控制" class="headerlink" title="主轴电动机M1控制"></a>主轴电动机M1控制</h3><p><strong>启动控制</strong></p><ol><li>选择转速</li><li>合上<strong>电源隔离开关QS1</strong>（1区）</li><li>旋转<strong>主轴换向转换开关SA3</strong>（2区）到合适的方向</li><li>按下<strong>按钮SB1</strong>或<strong>按钮SB2</strong></li><li><strong>交流接触器KM1</strong>线圈（13区）通电</li><li>（1）<strong>主轴电动机M1</strong>起动<br>（2）<strong>交流接触器KM1</strong>辅助动合触点（15区）闭合<br>（3）<strong>交流接触器KM1</strong>辅助动合触点（14区）闭合<strong>自锁</strong></li></ol><p>完成了以上操作，电流的大致方向及位置如下图所示：<br><img src="/img/11-3.png" alt="主轴电动机M1控制电流的大致方向及位置"></p><p><strong>制动控制</strong></p><ol><li>按下<strong>停止按钮SB5</strong>或<strong>停止按钮SB6</strong></li><li><strong>停止按钮SB5动断触点SB5-1</strong>或<strong>停止按钮SB6动断触点SB6-1</strong>（13区）断开<br>(2.1.1) 切断<strong>接触器KM1线圈电路</strong>（13区）<br>(2.1.2) <strong>接触器KM1主触点</strong>（2区）分断<br>(2.1.3) <strong>主轴电动机M1</strong>（2区）惯性运转<br>(2.2.1) <strong>停止按钮SB5动合触点SB5-2</strong>（8区）或<strong>停止按钮SB6动合触点SB6-2</strong>（8区）闭合<br>(2.2.1) <strong>电磁离合器YC1</strong>线圈（8区）通电</li><li>使主轴电动机M1迅速制动停转</li></ol><p><strong>换刀制动控制</strong></p><ol><li><strong>转换开关SA1</strong>扳向换刀位置</li><li>（1）<strong>转换开关SA1动合触点SA1-1</strong>（8区，105-106）闭合<br>（2）<strong>转换开关SA1动断触点SA1-2</strong>（13区，0-1）断开</li><li>2-（1）=&gt;<strong>电磁离合器YC1线圈</strong>（8区）将主轴制动<br> 2-（2）=&gt;切断控制电路=&gt;<strong>主轴电动机M1</strong>无法运转</li></ol><p><strong>变速冲动控制</strong></p><ol><li>机械联动：变速手柄通过机械机构与<strong>位置开关SQ1</strong>相连。</li><li>向下压手柄，使齿轮组脱开啮合</li><li>向外拉手柄，将手柄移至中间空槽</li><li>转动变速盘，选定所需转速</li><li>然后以较快的速度将手柄推回原位</li><li>产生冲动信号，联动机构瞬时碰压<strong>位置开关SQ1</strong></li><li><strong>常闭触点SQ1‑2</strong>断开（切断正常控制回路）。</li><li><strong>常开触点SQ1‑1</strong>闭合（使接触器 KM1 线圈通电）。</li><li><strong>电机点动</strong>（<em>KM1 立即让主轴电机 M1 短暂转动一下，帮助齿轮齿对准，便于良好啮合</em>）</li><li>手柄完全推回原位后，<strong>SQ1各触点</strong>复位</li><li><strong>KM1断电释放</strong></li><li>电机停转</li><li>变速冲动结束。</li></ol><p>剩余内容详见<a href="https://publicstudio.dpdns.org/2026/08/27/%E6%96%87%E7%AB%A0_12/">机床电路图的识读—X62W卧式万能铣床的识读（二）</a></p><p>好了，以上就是今天对于<strong>机床电路图的识读—X62W卧式万能铣床的识读（一）</strong>再见。<br>更多精彩内容请访问 publicstudio.qd.je</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> X62W </category>
+          
+          <category> 机床 </category>
+          
+          <category> 电器 </category>
+          
+          <category> 电气控制 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 工厂电器 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>机床电路图的识读--CA6140车床电气控制线路原理图举例</title>
+      <link href="/2026/08/24/%E6%96%87%E7%AB%A0_10/"/>
+      <url>/2026/08/24/%E6%96%87%E7%AB%A0_10/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>机床电路图的识读—CA6140车床电气控制线路原理图举例</p><hr><p>Hello,EveryBody.我是寅虎青蛟，现在我们来说说<strong>机床电路图的识读</strong>，我们使用<strong>CA6140车床电气控制线路原理图</strong>来举例。<br>由于再上一期我们已经了解了识读的相关方法，所以今天我们进行<strong>CA6140车床电气控制线路原理图</strong>的<strong>工作原理分析</strong>。</p><hr><h1 id="总述"><a href="#总述" class="headerlink" title="总述"></a>总述</h1><p>大家都知道，机床电路基本分为<strong>主电路</strong>和<strong>控制电路</strong>以及<strong>辅助功能</strong>三部分。至于他们的作用可以通过文字的形式展现出来，因此在这里我们不会过多阐述。<br>接下来我们先展示整张电路图：<br><img src="/img/10-1.png" alt="CA6140车床电气控制线路原理图"></p><hr><h1 id="主电路分析"><a href="#主电路分析" class="headerlink" title="主电路分析"></a>主电路分析</h1><p>我们先展示<strong>主电路</strong>电路图：<br><img src="/img/10-2.png" alt="CA6140车床电气控制线路原理图主电路"></p><p>特征非常明显。这个主电路中的所有控制和保护<strong>电器元件</strong>如下：</p><blockquote><p>主轴电动机M1<br>冷却泵电动机M2<br>快速移动电动机M3<br>交流接触器KM<br>中间继电器KA1<br>中间继电器KA2<br>热继电器FR1<br>热继电器FR2<br>低压断路器QF<br>熔断器FU<br>熔断器FU1</p></blockquote><p>接下来我们对这些电器进行分类，分类依据是根据它们的<strong>作用和类别</strong>来进行分类。</p><div class="table-container"><table><thead><tr><th>名称与代号</th><th>作用</th><th>控制电器</th><th>过载保护电器</th><th>短路保护电器</th></tr></thead><tbody><tr><td>主轴电动机M1</td><td>带动主轴旋转、刀架进给运动</td><td>交流接触器KM</td><td>热继电器FR1</td><td>低压断路器QF</td></tr><tr><td>冷却泵电动机M2</td><td>输送冷却液</td><td>中间继电器KA1</td><td>热继电器FR2</td><td>熔断器FU</td></tr><tr><td>快速移动电动机M3</td><td>带动刀架快速移到</td><td>中间继电器KA2</td><td>无</td><td>熔断器FU1</td></tr></tbody></table></div><p>主电路的运转要根据控制电路进行，其中QF得电的前提是要把<strong>钥匙开关SB</strong>向右旋转，才能使低压断路器QF闭合，让三相电源引入主电路。</p><hr><h1 id="控制电路分析"><a href="#控制电路分析" class="headerlink" title="控制电路分析"></a>控制电路分析</h1><p>我们先展示<strong>控制电路</strong>电路图：<br><img src="/img/10-3.png" alt="CA6140车床电气控制线路原理图控制电路"></p><p>要<strong>注意</strong>的是：<br>在CA6140型机床控制线路中，<strong>冷却泵电动机M2</strong>由<strong>中间继电器KA1控制</strong>，<strong>主轴电动机M1</strong>和<strong>冷却泵电动机M2</strong>采用控制电路顺序控制</p><h2 id="断电连锁保护"><a href="#断电连锁保护" class="headerlink" title="断电连锁保护"></a>断电连锁保护</h2><p>断电连锁保护就是将钥匙开关SB和位置开关SQ2的动断触点并联后与断路器QF的线圈串联，这就是断电连锁保护的电路<strong>连接方式</strong></p><p>它的状态为</p><ul><li><p>在工作时SB和SQ2的动断触点是断开的QF线圈不通电，断路器能合闸</p></li><li><p>如果把配电箱的门打开时，SQ2动断触点闭合QF线圈通电断路器QF自动断开，切断了一整条控制线路，达到了保护安全的目的</p></li></ul><p><strong>所以SB钥匙开关是非常重要的一种电器，如果没有SB钥匙开关，那么这台车床将无法启动</strong></p><p><em>在该电路中还有一个断电连锁保护:</em><br>位置开关SQ1的<strong>动合触点</strong>闭合时，打开床头传送皮带罩后SQ1<strong>动合</strong>触点将<strong>断开</strong>，切断控制电路的电源，使<strong>三台电动机无法正常工作</strong></p><h2 id="主轴电动机M1的控制"><a href="#主轴电动机M1的控制" class="headerlink" title="主轴电动机M1的控制"></a>主轴电动机M1的控制</h2><p><strong>启动M1：</strong></p><ol><li>合上<strong>隔离开关QF</strong></li><li>按下<strong>启动按钮SB2</strong></li><li><strong>接触器KM线圈</strong>（7区）通电</li><li><strong>接触器KM辅助动合触点</strong>（8区，6-7）闭合<strong>自锁</strong>，<strong>接触器KM辅助动合触点</strong>（10区）闭合</li><li><strong>接触器KM主触点</strong>（2区）闭合  </li><li><strong>主轴电动机M1</strong>启动，</li></ol><p><strong>停止M1：</strong></p><ol><li>按下<strong>停止按钮SB1</strong></li><li><strong>接触器KM线圈</strong>断电</li><li><strong>接触器KM线圈</strong>主触点断开</li><li><strong>主轴电动机M1</strong>停转</li></ol><p><strong>意外情况：主轴电动机M1过载：</strong></p><ol><li><strong>热继电器FR1</strong>动断触点（7区，4-5）断开</li><li><strong>接触器KM线圈</strong>断电</li><li><strong>接触器KM线圈</strong>主触点断开</li><li><strong>主轴电动机M1</strong>停转</li></ol><h2 id="冷却泵电动机M2的控制"><a href="#冷却泵电动机M2的控制" class="headerlink" title="冷却泵电动机M2的控制"></a>冷却泵电动机M2的控制</h2><p><strong>启动M2：</strong></p><ol><li><strong>接触器KM辅助动合触点</strong>（10区）闭合</li><li>旋转<strong>旋钮开关SA1</strong>，使其闭合</li><li><strong>冷却泵电动机M2</strong>启动</li></ol><p><strong>停止M2：</strong></p><ol><li><strong>主轴电动机M1</strong>停止或断开<strong>旋钮开关SA1</strong>冷却泵电动机</li><li><strong>冷却泵电动机M2</strong>停止</li></ol><h2 id="刀架快速移动电动机M3的控制"><a href="#刀架快速移动电动机M3的控制" class="headerlink" title="刀架快速移动电动机M3的控制"></a>刀架快速移动电动机M3的控制</h2><p><strong>注意</strong>：<br>刀架的前后左右方向的改变是由<strong>进给操作手柄配合机械装置</strong>来实现的，这个装置在电路图中<strong>未画出</strong>。</p><p><strong>快速移动刀架：</strong></p><ol><li>按下<strong>按钮SB3</strong></li><li><strong>中间继电器KA2</strong>线圈（9区）通电</li><li><strong>刀架快速移动电动机M3</strong>启动</li><li>松开<strong>按钮SB3</strong></li><li><strong>中间继电器KA2</strong>线圈断电</li><li><strong>刀架快速移动电动机M3</strong>停止</li></ol><h1 id="辅助电路（照明与信号灯电路）分析"><a href="#辅助电路（照明与信号灯电路）分析" class="headerlink" title="辅助电路（照明与信号灯电路）分析"></a>辅助电路（照明与信号灯电路）分析</h1><p><strong>开启信号灯HL：</strong></p><ol><li>关闭电箱门</li><li><strong>SQ2动断触点</strong>断开</li><li>合上<strong>隔离开关QF</strong></li><li><strong>信号灯HL</strong>通电</li></ol><p><strong>关闭信号灯HL：</strong></p><ol><li>断开<strong>隔离开关QF</strong></li><li><strong>信号灯HL</strong>断电</li></ol><p><strong>开启信号灯EL：</strong></p><ol><li>合上<strong>旋钮开关SA2</strong></li><li><strong>信号灯EL</strong>通电</li></ol><p><strong>关闭信号灯EL：</strong></p><ol><li>断开<strong>旋钮开关SA2</strong></li><li><strong>信号灯EL</strong>断电</li></ol><hr><p>好了，以上就是今天对于<strong>CA6140车床电气控制线路原理图的识读</strong>再见。<br>更多精彩内容请访问 publicstudio.dpdns.org</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> CA6140 </category>
+          
+          <category> 机床 </category>
+          
+          <category> 电器 </category>
+          
+          <category> 电气控制 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 工厂电器 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>三极管的分配和放大作用</title>
+      <link href="/2026/08/24/%E6%96%87%E7%AB%A0_7/"/>
+      <url>/2026/08/24/%E6%96%87%E7%AB%A0_7/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="三极管的分配和放大作用"><a href="#三极管的分配和放大作用" class="headerlink" title="三极管的分配和放大作用"></a>三极管的分配和放大作用</h1><p>Hello,EveryBody.我是Cat，现在我们来说说三极管的分配和放大作用。</p><hr><h2 id="三极管的电流分配关系"><a href="#三极管的电流分配关系" class="headerlink" title="三极管的电流分配关系"></a>三极管的电流分配关系</h2><p>不要问为什么，直接上公式：</p><blockquote><p><strong>$I_E=I_C+I_B$</strong><br><strong>$I_C=βI_B$</strong><br>==由上面两个可以推导出：==<br><strong>$I_E=βI_B+I_B$</strong> ⇒ <strong>$I_E=(1+β)I_B≈I_B$</strong><br>那这是则么弄出来的呢，具体看下表</p></blockquote><div class="table-container"><table><thead><tr><th>$I_B / mA$</th><th>$-0.001$</th><th>$0$</th><th>$0.01$</th><th>$0.02$</th><th>$0.03$</th><th>$0.04$</th><th>$0.05$</th></tr></thead><tbody><tr><td>$I_C / mA$</td><td>$0.001$</td><td>$0.01$</td><td>$0.56$</td><td>$1.14$</td><td>$1.74$</td><td>$2.33$</td><td>$2.91$</td></tr><tr><td>$I_E / mA$</td><td>$0$</td><td>$0.01$</td><td>$0.57$</td><td>$1.16$</td><td>$1.77$</td><td>$2.37$</td><td>$2.96$</td></tr></tbody></table></div><p>由于发射极(e)的<strong>电流</strong>==等于==集电极(c)的<strong>电流</strong>+基极的<strong>电流</strong>。用公式可以表示为：<br><strong>$I_E=I_C+I_B$</strong><br>然后基极(b)电流很小，所以集电极<strong>电流</strong>与发射极<strong>电流</strong>近似相等，用公式可以表示为：<br><strong>$I_C≈I_E$</strong></p><p>对此，我们可以看出：<br>三极管放大的==本质==为用基极($B$)的小电流($I_B$)控制==大的==集电极($C$)的大电流($I_C$)</p><p><strong>对了，还有几个情况需要我们注意：</strong></p><ol><li>通过集电结的反向电流称为集电极(c)-基极(b)的反向饱和电流。这个简称<strong>三极管的反向饱和电流</strong>，记作$I_{CBO}$。</li><li>集电极(c)与发射极(e)之间的电流称为<strong>集电极发射极反向饱和电流</strong>，又称三极管的<strong>穿透电流</strong>，记作$I_{CEO}$。</li><li>$I<em>{CEO}$越==大==，三极管<strong>温度稳定性==差==</strong>；<br>$I</em>{CEO}$越==小==，三极管<strong>温度稳定性==好==</strong>。</li><li>$I_{CEO}$会随==温度==的<strong>升高</strong>而<strong>增大</strong>。</li><li>==硅管==的$I_{CEO}$比==锗管==<strong>小很多</strong>。==硅管==的<strong>温度稳定性</strong>比==锗管==<em>好</em>。</li></ol><hr><h2 id="三极管的电流放大作用"><a href="#三极管的电流放大作用" class="headerlink" title="三极管的电流放大作用"></a>三极管的电流放大作用</h2><p>当三极管的$I_B$有一微小变化时，就能引起$I_C$较大的变化，这种现象称为<strong>三极管的电流放大作用</strong><br>通常我们把$I_C$与$I_B$的变化的比值$β$用来表示，称为==共发射及交流电流放大系数==，简称<strong>交流$β$</strong>。<br>用公式表示为：<br>(\beta = \frac{\Delta I_C}{\Delta I_B})</p><hr><p>好了，以上就是今天的全部内容，再见。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 电子 </category>
+          
+          <category> 三极管 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 电子技术 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>电源有载工作</title>
+      <link href="/2026/08/24/%E6%96%87%E7%AB%A0_8/"/>
+      <url>/2026/08/24/%E6%96%87%E7%AB%A0_8/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="电源有载工作"><a href="#电源有载工作" class="headerlink" title="电源有载工作"></a>电源有载工作</h1><p>Hello,EveryBody.我是Cat，现在我们来说说电源有载工作</p><hr><h2 id="电源的有载工作"><a href="#电源的有载工作" class="headerlink" title="电源的有载工作"></a>电源的有载工作</h2><p><strong>全电路欧姆定律</strong><br>$ I= {E}/{R_0+R} $<br><strong>负载电阻两端的电压</strong><br>$U=RI$<br>由上面两个公式可以<strong>得出</strong>：<br>$ U=E- R_0 I$</p><blockquote><p>对此，我们可以得出结论：当<strong>电源电压</strong>小于电动势，两者之差为==电流通过电源内阻所产生的电压降==<strong>$R_0I$</strong>.<br>电源的==电流越大==，则电源==电压下降的越多==。</p></blockquote><hr><h2 id="功率与功率平衡"><a href="#功率与功率平衡" class="headerlink" title="功率与功率平衡"></a>功率与功率平衡</h2><p>把上面得出的公式$ U=E- R_0 I$的各项乘以电流$I$，可以得到<strong>功率平衡公式</strong>。<br>$ UI=EI- R_0 I^2$<br>$ P=P_E- \Delta P$</p><blockquote><p>式子里<br>$P_E=EI$—电源产生的功率<br>$\Delta P$—电源内阻上损耗的功率<br>$P=UI$—电源输出功率</p></blockquote><hr><h2 id="区分电源和负载"><a href="#区分电源和负载" class="headerlink" title="区分电源和负载"></a>区分电源和负载</h2><p>至于电源和负载的判别其实非常简单，我都不想多说了<br>其实<strong>提供电力，能量的叫做电源</strong>，<strong>接收电力，消耗电力的叫做负载</strong>。<br>接下来，我们举一个==饱受争议==的例子<br><strong>蓄电池</strong>和<strong>义务教育阶段科学课上的发电机</strong></p><h3 id="蓄电池"><a href="#蓄电池" class="headerlink" title="蓄电池"></a>蓄电池</h3><p>这个物品我们需要更具<strong>实际情况</strong>来判断</p><div class="table-container"><table><thead><tr><th>作用</th><th>状态</th></tr></thead><tbody><tr><td>用于电瓶车及其他地方的<br>给其他地方的负载供电的时候</td><td>==电源==</td></tr><tr><td>用于充电的时候，<br>有其他电源给予其电力的时候</td><td>==负载==</td></tr></tbody></table></div><h3 id="发电机"><a href="#发电机" class="headerlink" title="发电机"></a>发电机</h3><p>这个物品我们也需要更具<strong>实际情况</strong>来判断</p><div class="table-container"><table><thead><tr><th>作用</th><th>状态</th></tr></thead><tbody><tr><td>用于小灯泡及其他地方的<br>给其他地方的负载供电的时候<br>也就是发电的时候</td><td>==电源==</td></tr><tr><td>有其他电源给予其电力的时候<br><strong>不常见</strong></td><td>==负载==</td></tr></tbody></table></div><blockquote><p>事实上，所有的电源和负载都是要更具实际情况来确定的，有些时候是<strong>电源</strong>，有些时候是<strong>负载</strong>。这都是不确定的选项，所以实际情况的判断非常重要。</p></blockquote><hr><p>好了，以上就是今天的全部内容，再见。<br>更多精彩内容请访问 publicstudio.dpdns.org</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 电工 </category>
+          
+          <category> 欧姆定律 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 电工基础 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>电路图的识读基础--CA6140车床电气控制线路原理图举例</title>
+      <link href="/2026/08/24/%E6%96%87%E7%AB%A0_9/"/>
+      <url>/2026/08/24/%E6%96%87%E7%AB%A0_9/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="电路图的识读基础—CA6140车床电气控制线路原理图举例"><a href="#电路图的识读基础—CA6140车床电气控制线路原理图举例" class="headerlink" title="电路图的识读基础—CA6140车床电气控制线路原理图举例"></a>电路图的识读基础—CA6140车床电气控制线路原理图举例</h1><hr><p>Hello,EveryBody.我是Cat，现在我们来说说<strong>电路图的识读基础</strong>，我们使用<strong>CA6140车床电气控制线路原理图</strong>来举例。<br>今天我们只掌握识读基本方法，认识电路图，在下一次我们将进行<strong>CA6140车床电气控制线路原理图</strong>的<strong>工作原理分析</strong>。</p><h2 id="如何识读"><a href="#如何识读" class="headerlink" title="如何识读"></a>如何识读</h2><p>由于种种原因，机床的电器控制线路一般都比较复杂（通俗来讲：<strong>电气元件</strong>和<strong>电气设备</strong>较多。</p><p><strong>但是</strong>，不用担心，因为所以的机床的基本电路都是差不多的。</p><p>至于如何识读，我的<strong>个人</strong>建议是<strong>主电路</strong>和<strong>控制电路</strong>一起看，<strong>控制电路</strong>的==优先级==<em>永远高于**</em>主电路**。</p><hr><h2 id="CA6140车床电气控制线路原理图"><a href="#CA6140车床电气控制线路原理图" class="headerlink" title="CA6140车床电气控制线路原理图"></a>CA6140车床电气控制线路原理图</h2><p>好了，接下来展示图纸：<br><img src="/img/9_p1.png" alt=""><br>这个就是CA6140车床电气控制线路原理图<br>同时，这张图也是<strong>维修</strong>，<strong>接线</strong>的重要理论依据</p><p>那么是不是需要机床实物呢，答案是<strong>不需要</strong>，==为什么呢？==<br>问这么多为什么干什么，说了==不用==就是==不用==，记住就行。</p><hr><h2 id="电路功能区域的划分"><a href="#电路功能区域的划分" class="headerlink" title="电路功能区域的划分"></a>电路功能区域的划分</h2><p><strong>划分作用</strong><br>便于分析机床电气控制线路的工作原理和明确各部分的功能。</p><p><strong>划分方法</strong><br>将机床电器控制线路原理图按电路功能划分成若干个单元，并用文字将其功能标注在控制线路原理图上部的栏内。</p><p>如下图所示，电路共分成<strong>13个单元</strong>。（红色框出来的部分）<br><img src="/img/9_p2.png" alt=""><br>这里==一个小格就叫做一个单元==，如下图所示的叫<strong>一个单元</strong>。</p><p align="center">  <img src="/img/9_p3.png" alt="" width="10%"></p><p>在图中，总共分13个单元，分别是：</p><blockquote><p>1.电源保护<br>2.电源隔离开关<br>3.主轴电动机<br>4.短路保护<br>5.冷却泵电动机<br>6.刀架快速移动电动机<br>7.控制变压器及保护<br>8.断电保护<br>9.主轴电动机控制<br>10.刀架快速移动<br>11.冷却泵控制<br>12.信号灯<br>13.照明灯</p></blockquote><hr><h2 id="电路图区的划分"><a href="#电路图区的划分" class="headerlink" title="电路图区的划分"></a>电路图区的划分</h2><p><strong>划分作用</strong><br>便于分析各种用电设备的主电路，控制回路和标注各电器元件的触点，线圈等在电路图中的位置。</p><p><strong>划分方法</strong><br>在机床电气控制线路原理图的下部或者上部，按一条回路或一条支路为单位划分成若干图区，从左向右依次用阿拉伯数字编号标注在图区栏。</p><p>==<strong>注意</strong>==：<strong>无论是哪个机床的电路图，它的所有的电路图区和电路功能区域都是互斥的，只能一个在上，一个在下，不能一起</strong></p><p>如下图所示，电路共分成<strong>12个图区</strong>。（红色框出来的部分）<br><img src="/img/9_p4.png" alt=""><br>这里==一个小格就叫做一个图区==，如下图所示的叫<strong>一个图区</strong>。</p><p align="center">  <img src="/img/9_p5.png" alt="" width="10%"></p><hr><h2 id="电气元件线圈下方该元件触点所属图区号的标注"><a href="#电气元件线圈下方该元件触点所属图区号的标注" class="headerlink" title="电气元件线圈下方该元件触点所属图区号的标注"></a>电气元件线圈下方该元件触点所属图区号的标注</h2><p><strong>划分作用</strong><br>在机床电气控制线路原理图中，为了方便快速理解电路图，对于有线圈电器元件，他们的线圈下方要标注该元件触点所属图区号。</p><p><strong>划分原因</strong><br>因为我们所说的原理图，它是一个控制电路与主电路分离的电路图，所以一个元器件可能在电路图中多次显示，为了方便查找，我们需要在下方标注与便快速查找。</p><p>如下图红框框出来的地方所示这就是序号的标注<br><img src="/img/9_p6.png" alt="CA6140车床电气控制线路原理图元件触点所属图区号"></p><p>在ca6140车床电器控制线路原理图中总共运用了三个地方的区号标注。<br>一个区号的标注如下图所示：</p><p align="center">  <img src="/img/9_p7.png" alt="" width="10%"></p><p align="center">  <img src="/img/9_p8.png" alt="" width="10%"></p><p>==<strong>注意</strong>：他们都标注在<strong>线圈下方</strong>。==</p><p><strong>划分规则</strong><br>在原理图中<br>对于<strong>每个接触器</strong>，其线圈下方画出<strong>两条竖直线</strong>，分成<strong>左</strong>、<strong>中</strong>、<strong>右</strong>三栏。<br>对于<strong>每个继电器</strong>，在线圈下方画出<strong>一条竖直线</strong>，分成<strong>左</strong>、<strong>右</strong>两栏。<br>将受其线圈控制而动作的各个触点所处的图区号填入相应的栏内，==对备而未用的触点（也就是存在，但是没有接任何线路，没有启用）==，在相应的栏内用记号<strong>“x”</strong>==标出==或==不标出==<strong>任何符号</strong>。</p><p><strong>接触器标注方法</strong></p><div class="table-container"><table><thead><tr><th>栏目</th><th>左栏</th><th>中栏</th><th>右栏</th></tr></thead><tbody><tr><td>触点类型</td><td>主触点所处图区号</td><td>辅助动合触点所处图区号</td><td>辅助动断触点所处图区号</td></tr><tr><td>举例<br><img src="/img/9_p7.png" alt=""></td><td>表示 3 对主触点均在“2”号图区</td><td>表示一对辅助动合触点在“8”号图区，另一对动合触点在“10”号图区</td><td>表示 2 对辅助动断触点均未用</td></tr></tbody></table></div><p><strong>继电器标注方法</strong></p><div class="table-container"><table><thead><tr><th>栏目</th><th>左栏</th><th>右栏</th></tr></thead><tbody><tr><td>触点类型</td><td>动合触点所处图区号</td><td>动断触点所处图区号</td></tr><tr><td>举例<br><img src="/img/9_p8.png" alt=""></td><td>表示 3 对动合触点均在“4”号图区</td><td>表示动断触点均未用</td></tr></tbody></table></div><hr><h2 id="电气元件触点文字符号下方线圈图区号的标注"><a href="#电气元件触点文字符号下方线圈图区号的标注" class="headerlink" title="电气元件触点文字符号下方线圈图区号的标注"></a>电气元件触点文字符号下方线圈图区号的标注</h2><p><strong>划分作用</strong><br>在机床电气控制线路原理图中，为了方便快速理解电路图，对于接触器，中间继电器等电器元件，他们的触点文字符号下方用阿拉伯数字标注线圈图区号。</p><p><strong>划分原因</strong><br>因为我们所说的原理图，它是一个控制电路与主电路分离的电路图，所以一个元器件可能在电路图中多次显示，为了方便查找，我们需要在下方标注与便快速查找。</p><p>如下图红框框出来的地方所示这就是序号的标注<br><img src="/img/9_p9.png" alt="CA6140车床电气控制线路原理图区号"></p><p>在ca6140车床电器控制线路原理图中总共运用了若干地方的区号标注。<br>一个区号的标注如下图所示：</p><p align="center">  <img src="/img/9_p10.png" alt="" width="10%"></p><p>==<strong>注意</strong>：他们都标注在<strong>文字符号下方</strong>。==</p><hr><p>好了，以上就是今天的全部内容，下一次我们将进行<strong>CA6140车床电气控制线路原理图</strong>的<strong>工作原理分析</strong>，再见。<br>更多精彩内容请访问 publicstudio.dpdns.org</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> CA6140 </category>
+          
+          <category> 机床 </category>
+          
+          <category> 电器 </category>
+          
+          <category> 电气控制 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 工厂电器 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>关于态玻璃效果的web前端实现</title>
+      <link href="/2026/08/24/%E6%96%87%E7%AB%A0_1/"/>
+      <url>/2026/08/24/%E6%96%87%E7%AB%A0_1/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="液态玻璃效果的web前端实现"><a href="#液态玻璃效果的web前端实现" class="headerlink" title="液态玻璃效果的web前端实现"></a>液态玻璃效果的web前端实现</h1><hr><p>Hello Everybody 我是Cat。今天我们来讲解Apple液态玻璃的实现，也是本站的创新点</p><hr><h2 id="什么是液态玻璃"><a href="#什么是液态玻璃" class="headerlink" title="什么是液态玻璃"></a>什么是液态玻璃</h2><p><strong>液态玻璃其实不是官方学名</strong><br>液态玻璃实际上是<strong>毛玻璃背景模糊</strong>。简单来说是一块背景图，上面蒙了一层半透明磨砂面。如图所示：<br><img src="/img/1_2.png" alt=""></p><p><strong>最终的效果如何</strong><br><img src="/img/1_1.png1.png" alt=""></p><hr><h2 id="如何实现"><a href="#如何实现" class="headerlink" title="如何实现"></a>如何实现</h2><ol><li>我们新建一个文件夹，名字叫<code>Frosted_glass</code>。</li><li>在里面创建如下所示的文件夹及文件</li></ol><figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">/</span><br><span class="line">├── index.html           # 【入口】液态玻璃的主入口</span><br><span class="line">│</span><br><span class="line">├── background.jpeg      # 【背景】全局唯一动态背景图（自己选择，后缀名不一样也行）</span><br><span class="line">│</span><br><span class="line">├── style.css            # 【样式】液态玻璃核心</span><br><span class="line"></span><br></pre></td></tr></table></figure><ol><li>index.html写最简单的盒子</li></ol><p><strong>要是连这个也不会证明你没有任何前端基础，建议去哔哩哔哩从头开始学</strong></p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">&quot;zh-CN&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>毛玻璃<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 引入外部 CSS 文件 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;style.css&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 为了看到毛玻璃效果，盒子后面必须要有背景内容 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;background&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;glass-box&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure><ol><li>style.css写毛玻璃</li></ol><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 给页面一个彩色背景，否则看不到毛玻璃的透光感 */</span></span><br><span class="line"><span class="selector-class">.background</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">100%</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">100vh</span>;</span><br><span class="line">    <span class="attribute">background</span>: blue;</span><br><span class="line">    <span class="attribute">display</span>: flex;</span><br><span class="line">    <span class="attribute">justify-content</span>: center;</span><br><span class="line">    <span class="attribute">align-items</span>: center;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.glass-box</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">300px</span>;</span><br><span class="line">    <span class="attribute">padding</span>: <span class="number">300px</span>; </span><br><span class="line">    </span><br><span class="line">    <span class="comment">/* 1. 透明 */</span></span><br><span class="line">    <span class="attribute">background</span>: transparent;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">/* 2. 背景模糊，产生磨砂玻璃效果 */</span></span><br><span class="line">    <span class="attribute">backdrop-filter</span>: <span class="built_in">blur</span>(<span class="number">12px</span>);</span><br><span class="line">    -webkit-<span class="attribute">backdrop-filter</span>: <span class="built_in">blur</span>(<span class="number">12px</span>); <span class="comment">/* 兼容 Safari */</span></span><br><span class="line">    </span><br><span class="line">    <span class="comment">/* 3. 边框：半透明白色，产生发光边缘 */</span></span><br><span class="line">    <span class="attribute">border</span>: <span class="number">1px</span> solid <span class="built_in">rgba</span>(<span class="number">255</span>, <span class="number">255</span>, <span class="number">255</span>, <span class="number">0.4</span>);</span><br><span class="line">    </span><br><span class="line">    <span class="comment">/* 4. 阴影：外部深邃 + 内边光 + 底高光反射 */</span></span><br><span class="line">    <span class="attribute">box-shadow</span>: </span><br><span class="line">        <span class="number">0</span> <span class="number">15px</span> <span class="number">35px</span> <span class="built_in">rgba</span>(<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0.25</span>),              <span class="comment">/* 投影，浮框 */</span></span><br><span class="line">        inset <span class="number">0</span> <span class="number">1px</span> <span class="number">0px</span> <span class="built_in">rgba</span>(<span class="number">255</span>, <span class="number">255</span>, <span class="number">255</span>, <span class="number">0.6</span>),     <span class="comment">/* 顶边光 */</span></span><br><span class="line">        inset <span class="number">0</span> -<span class="number">1px</span> <span class="number">0px</span> <span class="built_in">rgba</span>(<span class="number">255</span>, <span class="number">255</span>, <span class="number">255</span>, <span class="number">0.2</span>);    <span class="comment">/* 底边光 */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>用浏览器打开index.html就能看到毛玻璃效果了<br><img src="/img/1_image.png" alt=""><br>但是没有光泽，那么我们修改相关参数使其变得光泽</p><ol><li>加入背景图片，尽量花一点，效果更好，修改.background </li></ol><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.background</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">100%</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">100vh</span>;</span><br><span class="line">    <span class="comment">/* 注意：这里不再是 blue，而是引入你的背景图 */</span></span><br><span class="line">    <span class="attribute">background-image</span>: <span class="built_in">url</span>(<span class="string">&#x27;你的图片链接&#x27;</span>); </span><br><span class="line">    <span class="attribute">background-size</span>: cover;          <span class="comment">/* 保证图片铺满屏幕 */</span></span><br><span class="line">    <span class="attribute">background-position</span>: center;     <span class="comment">/* 图片居中显示 */</span></span><br><span class="line">    <span class="attribute">background-repeat</span>: no-repeat;    <span class="comment">/* 不平铺 */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ol><li>修改好后效果展示，这感觉不就来了吗<br><img src="/img/1_3.png" alt=""></li></ol><hr><p>以上就是今天的全部内容，如有错误请联系作者邮箱：xsh3304832000@163.com</p><hr>]]></content>
+      
+      
+      <categories>
+          
+          <category> apple </category>
+          
+          <category> 数码 </category>
+          
+          <category> 科技 </category>
+          
+          <category> 毛玻璃 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> web前端 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>平面向量基本概念</title>
+      <link href="/2026/08/24/%E6%96%87%E7%AB%A0_3/"/>
+      <url>/2026/08/24/%E6%96%87%E7%AB%A0_3/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Hello everybody，我是Cat。今天我们来聊聊<strong>平面向量</strong>的有关内容。</p><hr><h2 id="导语"><a href="#导语" class="headerlink" title="导语"></a>导语</h2><p>众所周知，平面向量是高等中学，高等教育学校有关于<strong>数学（math）</strong>教学的重要篇目。众多几何题目可以运用平面向量快速解题。从而获得高分。</p><hr><h1 id="向量的概念"><a href="#向量的概念" class="headerlink" title="向量的概念"></a>向量的概念</h1><p><em>为了方便解释，我们采用表格的形式展现出来，这样就不用浪费太多时间，同时，我们也可以更加直观的了解向量的基本概念。</em></p><div class="table-container"><table><thead><tr><th>概念</th><th>说明</th></tr></thead><tbody><tr><td><strong>向量</strong></td><td>既有<strong>大小</strong>又有<strong>方向</strong>的量。如力、位移、速度。<br>注意：向量<strong>不能</strong>比较大小（只能说模的大小）。</td></tr><tr><td><strong>向量的表示</strong></td><td><strong>几何表示</strong>：用有向线段表示，长度表示大小，箭头指向表示方向<br><strong>注意：电子体，印刷体的向量可以使用粗体字表示</strong>如：向量a的手写体为$\vec{a}$，印刷体为<strong><em>a</em></strong>。<br><strong>字母表示</strong>：$\vec{a}$、$\vec{b}$ 或 $\overrightarrow{AB}$（起点A，终点B）。<br><strong>坐标表示</strong>：在平面直角坐标系中 $\vec{a}=(x, y)$。</td></tr><tr><td><strong>向量的模</strong></td><td>向量的大小（长度），记作 $\lVert\vec{a}\rVert$ 或 $\lVert\overrightarrow{AB}\rVert$。<br>若 $\vec{a}=(x,y)$，则 $\lVert\vec{a}\rVert=\sqrt{x^2+y^2}$。</td></tr><tr><td><strong>零向量</strong></td><td>长度为 <strong>0</strong> 的向量，记作 $\vec{0}$，方向任意。<br>坐标表示为 $(0,0)$。</td></tr><tr><td><strong>单位向量</strong></td><td>模为 <strong>1</strong> 的向量。与非零向量 $\vec{a}$ 方向相同的单位向量为 $\frac{\vec{a}}{\lVert\vec{a}\rVert}$。</td></tr><tr><td><strong>相等向量</strong></td><td>长度<strong>相等</strong>且方向<strong>相同</strong>的向量。<br>向量与起点的位置无关，可自由平移。</td></tr><tr><td><strong>相反向量</strong></td><td>长度<strong>相等</strong>但方向<strong>相反</strong>的向量。<br>$\vec{a}$ 的相反向量记作 $-\vec{a}$；$\overrightarrow{AB} = -\overrightarrow{BA}$。</td></tr><tr><td><strong>平行向量（共线向量）</strong></td><td>方向<strong>相同或相反</strong>的非零向量。<br>向量 $\vec{a}$ 与 $\vec{b}$ 平行记作 $\vec{a} \parallel \vec{b}$。<br>规定：$\vec{0}$ 与任何向量平行。</td></tr><tr><td><strong>共面向量</strong></td><td>平行于同一个平面的向量。<br>空间中任意两个向量总是共面的，但三个向量不一定共面。</td></tr></tbody></table></div><h1 id="向量的特殊概念"><a href="#向量的特殊概念" class="headerlink" title="向量的特殊概念"></a>向量的特殊概念</h1><div class="table-container"><table><thead><tr><th>概念</th><th>说明</th></tr></thead><tbody><tr><td><strong>基向量</strong></td><td>坐标轴方向上的单位向量。<br>平面：$\vec{i}=(1,0)$，$\vec{j}=(0,1)$。<br>空间：$\vec{i}=(1,0,0)$，$\vec{j}=(0,1,0)$，$\vec{k}=(0,0,1)$。</td></tr><tr><td><strong>法向量</strong></td><td>垂直于平面或直线的非零向量。<br>平面的法向量垂直于平面内的所有向量。</td></tr><tr><td><strong>自由向量</strong></td><td>与起点无关，可任意平移的向量。<br>一般讨论的向量多属于自由向量。</td></tr><tr><td><strong>位置向量</strong></td><td>以坐标原点为起点，指向某点的向量。<br>点 $P(x,y)$ 的位置向量为 $\overrightarrow{OP}=(x,y)$。</td></tr></tbody></table></div><hr><p>以上就是今天的全部内容，如有错误请联系作者邮箱：xsh3304832000@163.com</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 数学 </category>
+          
+          <category> 向量 </category>
+          
+          <category> 平面向量 </category>
+          
+          <category> 高中 </category>
+          
+          <category> 职高 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 平面向量 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>电阻器的识读</title>
+      <link href="/2026/08/24/%E6%96%87%E7%AB%A0_4/"/>
+      <url>/2026/08/24/%E6%96%87%E7%AB%A0_4/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="电阻器的识读"><a href="#电阻器的识读" class="headerlink" title="电阻器的识读"></a>电阻器的识读</h1><p>Hello，everybody.我是Cat. 今天要讲解的是认识常用电阻器的<strong>电阻器的识读</strong>。<br>众所周知，电阻器有很多种类型。但是每种类型它的识读方式是不一样的。那么我们有什么好的办法来识别出这些电阻器的组织呢？<br>答案肯定是有的。今天小编就向大家提供几种方法，他们分别是：<strong>直标法</strong>，<strong>文字符号法</strong>，<strong>数码法</strong>和<strong>色标法</strong>。<br>不过在识读电阻器之前，我们要先来讲解电阻器的主要参数。</p><h2 id="电阻器的主要参数"><a href="#电阻器的主要参数" class="headerlink" title="电阻器的主要参数"></a>电阻器的主要参数</h2><h3 id="标称阻值"><a href="#标称阻值" class="headerlink" title="标称阻值"></a>标称阻值</h3><h4 id="什么是标称阻值？"><a href="#什么是标称阻值？" class="headerlink" title="什么是标称阻值？"></a>什么是标称阻值？</h4><p>标称阻值是指电阻器表面所标的阻值。<br>在上面这段话中，已经把电阻器的<strong>标称阻值</strong>用最大白话的方式展现了出来。我想只要你是受过教育的，那么这段话肯定是能够理解的。</p><h4 id="为什么要设立电阻器的标称组织"><a href="#为什么要设立电阻器的标称组织" class="headerlink" title="为什么要设立电阻器的标称组织?"></a>为什么要设立电阻器的标称组织?</h4><p>主要是因为考虑到满足实际使用的需要。 你可以想象一下。如果这个电阻器没有这个<strong>标称阻值</strong>，那么你就会滥用电阻器，滥用电阻器的后果不堪设想。比如说<strong>爆炸</strong>，<strong>火灾</strong>等等你想都不敢想的灾难就会面临我们。所以这个数值是==必须要存在==的。</p><hr><h3 id="允许误差"><a href="#允许误差" class="headerlink" title="允许误差"></a>允许误差</h3><h4 id="什么是允许误差？"><a href="#什么是允许误差？" class="headerlink" title="什么是允许误差？"></a>什么是允许误差？</h4><p>允许误差指的是<strong>标称阻值</strong>与<strong>实际组织</strong>的<strong>差值</strong>与标称阻值<strong>之比</strong>的<strong>百分数</strong>称为==允许误差==</p><h4 id="允许误差与精度等级的对应关系表"><a href="#允许误差与精度等级的对应关系表" class="headerlink" title="允许误差与精度等级的对应关系表"></a>允许误差与精度等级的对应关系表</h4><p>接下来呈现的是允许误差与精度等级的对应关系表<br><strong>注意</strong>:所有的电阻器肯定存在误差，但是==误差越小，精确程度就越高==。</p><div class="table-container"><table><thead><tr><th>允许误差</th><th>±0.5%</th><th>±1%</th><th>±2%</th><th>±5%</th><th>±10%</th><th>±20%</th></tr></thead><tbody><tr><td>精度等级</td><td>005</td><td>01</td><td>02</td><td>Ⅰ</td><td>Ⅱ</td><td>Ⅲ</td></tr></tbody></table></div><p>标称组织按标准化优先系列制造常见的表格具体在这里不再赘述，因为不怎么见到。</p><hr><h3 id="额定功率"><a href="#额定功率" class="headerlink" title="额定功率"></a>额定功率</h3><h4 id="额定功率为什么要有？"><a href="#额定功率为什么要有？" class="headerlink" title="额定功率为什么要有？"></a>额定功率为什么要有？</h4><p>额定功率是指在规定的温度和气压下，电阻器在交流或直流电路中能长期连续工作所消耗的最大功率。众所周知，电阻器是一种发热型电器，那么在正常工作下，电流通过电阻器就会产生热量，如果<strong>温度</strong>一旦超过了它的<strong>忍受极限</strong>，那么电阻器就会<strong>烧坏</strong>。</p><hr><h2 id="电阻器的四种标注方法"><a href="#电阻器的四种标注方法" class="headerlink" title="电阻器的四种标注方法"></a>电阻器的四种标注方法</h2><ol><li><strong>直标法</strong><br>直标法一般用<strong>数字</strong>和<strong>单位符号</strong>将阻值标注在电阻器上。<br>==一般用于电位器和功率较大的固定电阻器==</li><li><strong>文字符号法</strong><br>文字符号法是用<strong>数字</strong>和<strong>单位符号</strong>组合在一起表示阻值。<br><strong>文字符号前面</strong>的数字表示组值整数部分<br><strong>文字符号后面</strong>的数字表示组值小数部分<br>电阻单位的文字符号</li></ol><div class="table-container"><table><thead><tr><th>文字符号</th><th>R</th><th>K</th><th>M</th><th>G</th><th>T</th></tr></thead><tbody><tr><td>表示单位</td><td>Ω</td><td>kΩ</td><td>MΩ</td><td>GΩ</td><td>TΩ</td></tr></tbody></table></div><div class="table-container"><table><thead><tr><th>文字符号</th><th>D</th><th>F</th><th>G</th><th>J</th><th>K</th><th>M</th></tr></thead><tbody><tr><td>允许偏差</td><td>±0.5%</td><td>±1%</td><td>±2%</td><td>±5%</td><td>±10%</td><td>±20%</td></tr></tbody></table></div><ol><li><p><strong>数码法</strong><br>数码法是在电阻器上用三位数码表示标称组织的标注方法这种数码法可以直接识别，直接识读，==数码法一般用于体积较小的电阻器==</p></li><li><p><strong>色标法</strong><br>色标法有很多，色标法分为两位有效数字色标法，三位有效数字色标法<br>色标法有色标对照表，我们需要通过表格的形式来查找相应的电阻数.</p></li></ol><hr><p>以上就是今天的全部内容，如有错误请联系作者邮箱：xsh3304832000@163.com</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 电阻 </category>
+          
+          <category> 电工 </category>
+          
+          <category> 电路 </category>
+          
+          <category> 电阻器 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 电工基础 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>三极管的基本概念</title>
+      <link href="/2026/08/24/%E6%96%87%E7%AB%A0_5/"/>
+      <url>/2026/08/24/%E6%96%87%E7%AB%A0_5/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="三极管的基本概念"><a href="#三极管的基本概念" class="headerlink" title="三极管的基本概念"></a>三极管的基本概念</h1><p>Hello,EveryBody.我是Cat，现在我们来说说三级管的基本概念。</p><hr><h2 id="三极管的基本结构"><a href="#三极管的基本结构" class="headerlink" title="三极管的基本结构"></a>三极管的基本结构</h2><p>三极管由<strong>3个区</strong>，<strong>3个极</strong>，<strong>2个结</strong>组成，它们的具体规则见下表。</p><p>==3个区==</p><div class="table-container"><table><thead><tr><th>结构</th><th>特点</th><th>功能</th></tr></thead><tbody><tr><td>发射区</td><td>掺杂浓度<strong>大</strong></td><td>向基区发射载流子</td></tr><tr><td>基区</td><td>参杂<strong>少</strong></td><td>让载流子通过</td></tr><tr><td>集电区</td><td>体积比发射区<strong>大</strong><br>参杂<strong>少</strong></td><td>收集载流子</td></tr></tbody></table></div><p>==3个极和2个结都是本身的含义==<br>3个极分别为<strong>发射极</strong>，<strong>集电极</strong>，<strong>基极</strong>。<br>2个结分别为<strong>发射结</strong>，<strong>集电结</strong>。<br>==注意：==<strong>没有基结</strong></p><p>具体如下图所示</p><p><img src="/img/5_1.png" alt="三极管结构图"></p><hr><h2 id="NPN和PNP型三极管"><a href="#NPN和PNP型三极管" class="headerlink" title="NPN和PNP型三极管"></a>NPN和PNP型三极管</h2><p>学过二极管的都知道，二极管有一个PN结，那么三极管<strong>也有PN结</strong>，只不过有<strong>两个</strong></p><h3 id="NPN型三极管"><a href="#NPN型三极管" class="headerlink" title="NPN型三极管"></a>NPN型三极管</h3><blockquote><p>其实NPN型很简单，从==命名来看==，它由<strong>2个N区</strong>，<strong>一个P区</strong>组成。<br>再根据它的==顺序来看==，不管从那个极开始，<strong>P区</strong>始终在中间，也就是<strong>基极</strong>的位置。</p></blockquote><p><em>所以，结论如下</em></p><ol><li><strong>NPN型三极管</strong>的对照为<strong>P - 基区</strong>，<strong>N - 发射区或集电区</strong>（因为不管是发射区还是集电区都是P所在的位置。</li><li>根据==P区和N区之间存在PN结==，得出三极管存在<strong>2个PN结</strong>，这2个PN结通常这样命名：<strong>发射区</strong>和<strong>基区</strong>交界的为==发射结==；<strong>集电区</strong>和<strong>基区</strong>交界的为==集电结==。</li></ol><p><strong>电器符号：</strong></p><ol><li>文字符号：V</li><li>图形符号：<img src="/img/5_3.png" alt="NPN三极管结构及其图形符号"></li></ol><h3 id="PNP型三极管"><a href="#PNP型三极管" class="headerlink" title="PNP型三极管"></a>PNP型三极管</h3><p>更具NPN得出的结论，PNP其实是差不多的。</p><blockquote><p>其实PNP型也很简单，从==命名来看==，它由<strong>2个P区</strong>，<strong>一个N区</strong>组成。<br>再根据它的==顺序来看==，不管从那个极开始，<strong>N区</strong>始终在中间，也就是<strong>基极</strong>的位置。</p></blockquote><p><em>所以，结论如下</em></p><ol><li><strong>PNP型三极管</strong>的对照为<strong>N - 基区</strong>，<strong>P - 发射区或集电区</strong>（因为不管是发射区还是集电区都是P所在的位置。</li><li>根据==P区和N区之间存在PN结==，得出三极管存在<strong>2个PN结</strong>，这2个PN结通常这样命名：<strong>发射区</strong>和<strong>基区</strong>交界的为==发射结==；<strong>集电区</strong>和<strong>基区</strong>交界的为==集电结==。</li></ol><p><strong>电器符号：</strong></p><ol><li>文字符号：V</li><li>图形符号：<img src="/img/5_2.png" alt="PNP三极管结构及其图形符号"></li></ol><hr><h2 id="三级管的分类"><a href="#三级管的分类" class="headerlink" title="三级管的分类"></a>三级管的分类</h2><p>三极管的分类通常从<strong>材料、结构、功率、频率和用途</strong>几个主要维度来划分。</p><div class="table-container"><table><thead><tr><th>分类维度</th><th>主要类别</th><th>特点与说明</th></tr></thead><tbody><tr><td><strong>按材料</strong></td><td>硅管、锗管</td><td>硅管是当前应用最广的主流，热稳定性好；锗管较早期，开启电压低。</td></tr><tr><td><strong>按结构（极性）</strong></td><td><strong>NPN型</strong>、<strong>PNP型</strong></td><td>这是最核心的分类。两者工作原理相同，但电流方向和电压极性相反。</td></tr><tr><td><strong>按功率</strong></td><td>小功率管、中功率管、大功率管</td><td>主要依据耗散功率划分，大功率管通常需要配备散热片。</td></tr><tr><td><strong>按工作频率</strong></td><td>低频管、高频管、超高频管</td><td>不同频率的管子适用于不同的电路，例如高频管用于射频放大。</td></tr><tr><td><strong>按功能/用途</strong></td><td>开关管、功率管、达林顿管、光敏管、低噪声管等</td><td>为特定用途优化设计，比如达林顿管有极高的电流放大倍数，光敏管用于光电检测。</td></tr><tr><td><strong>按安装方式</strong></td><td>插件式、贴片式</td><td>插件式适合手工焊接和维修，贴片式体积小，是现代电子设备的主流。</td></tr></tbody></table></div><hr><p>好了，以上就是今天的全部内容，再见。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 电子 </category>
+          
+          <category> 三极管 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 电子技术 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>三极管的工作电压和基本连接方式</title>
+      <link href="/2026/08/24/%E6%96%87%E7%AB%A0_6/"/>
+      <url>/2026/08/24/%E6%96%87%E7%AB%A0_6/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="三极管的工作电压和基本连接方式"><a href="#三极管的工作电压和基本连接方式" class="headerlink" title="三极管的工作电压和基本连接方式"></a>三极管的工作电压和基本连接方式</h1><p>Hello,EveryBody.我是Cat，现在我们来说说三极管的工作电压和基本连接方式。</p><hr><h2 id="三极管的工作电压"><a href="#三极管的工作电压" class="headerlink" title="三极管的工作电压"></a>三极管的工作电压</h2><p>三极管的放大条件为<strong>发射结加正向电压，集电结加反向电压</strong>。<br>==对此可以得出以下结论：==</p><blockquote><p><strong>NPN</strong>：发射极(e)电位<strong>低于</strong>基极(b)电位<br><strong>PNP</strong>：发射极(e)电位<strong>高于</strong>基极(b)电位</p></blockquote><hr><h2 id="三极管的偏置电压"><a href="#三极管的偏置电压" class="headerlink" title="三极管的偏置电压"></a>三极管的偏置电压</h2><p><strong>什么是三极管的偏置电压？</strong></p><p>三极管的偏置电压是指加在 <strong>基极(b)</strong> 和 <strong>发射极(e)</strong> 之间的电压。</p><blockquote><p><strong>硅管：</strong> 0.5-0.8V<br><strong>锗管：</strong> 0.1-0.3V</p></blockquote><p>==同时应该注意==：加载 <strong>基极(b)</strong> 和 <strong>集电极(c)</strong> 之间的电压一般为几V-几千V。</p><p><strong>了解了这么多，接下来来看看三极管的电源接法吧。</strong></p><hr><h2 id="三极管的电源接法"><a href="#三极管的电源接法" class="headerlink" title="三极管的电源接法"></a>三极管的电源接法</h2><p>如图所示，这是有关 <strong>PNP</strong> 和 <strong>NPN</strong> 三极管的电源接法。</p><p><img src="/img/6_1.png" alt="三极管电源接法"><br>在此图中，有关解释见下：</p><div class="table-container"><table><thead><tr><th>符号</th><th>内容</th></tr></thead><tbody><tr><td>V</td><td>三极管</td></tr><tr><td>$G_C$</td><td>集电极电源</td></tr><tr><td>$G_B$</td><td>基极（偏置）电源</td></tr><tr><td>$R_b$</td><td>基极（偏置）电阻</td></tr><tr><td>$R_c$</td><td>集电极电阻</td></tr></tbody></table></div><hr><h2 id="三极管的电路基本连接方式"><a href="#三极管的电路基本连接方式" class="headerlink" title="三极管的电路基本连接方式"></a>三极管的电路基本连接方式</h2><ol><li>==共发射极接法==</li></ol><blockquote><p><strong>基极(b)</strong>：输入端<br><strong>集电极(c)</strong>：输出端<br><strong>发射极(e)</strong>：输入，输出两回路的共同端<br>接法如图所示：<img src="/img/6_2.png" alt="共发射极接法"></p></blockquote><ol><li>==共基极接法==</li></ol><blockquote><p><strong>基极(b)</strong>：输入，输出两回路的共同端<br><strong>集电极(c)</strong>：输出端<br><strong>发射极(e)</strong>：输入端<br>接法如图所示：<img src="/img/6_3.png" alt="共基极接法"></p></blockquote><ol><li>==共集电极接法==</li></ol><blockquote><p><strong>基极(b)</strong>：输入端<br><strong>集电极(c)</strong>：输入，输出两回路的共同端<br><strong>发射极(e)</strong>：输出端<br>接法如图所示：<img src="/img/6_4.png" alt="共发射极接法"></p></blockquote><hr><p>好了，以上就是今天的全部内容，再见。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 电子 </category>
+          
+          <category> 三极管 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 电子技术 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
