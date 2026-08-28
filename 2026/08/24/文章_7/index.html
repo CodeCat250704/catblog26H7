@@ -1,0 +1,288 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><title>三极管的分配和放大作用 | 寅虎青蛟的博客</title><noscript>开启 JavaScript 后才能访问本站</noscript><link rel="icon" href="/img/avatar.jpg"><link rel="stylesheet" href="/css/index.css?v=4.0.0"><link rel="canonical" href="https://codecat250704.github.io/catblog26H7/2026/08/24/%E6%96%87%E7%AB%A0_7/index.html"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.3.0/css/all.min.css"><!-- Feature-specific CSS--><!-- aplayer--><!-- swiper--><!-- fancybox ui--><!-- katex--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.47/dist/katex.min.css"><!-- Open Graph--><meta name="description" content="三极管的分配和放大作用Hello,EveryBody.我是Cat，现在我们来说说三极管的分配和放大作用。 三极管的电流分配关系不要问为什么，直接上公式： $I_E&amp;#x3D;I_C+I_B$$I_C&amp;#x3D;βI_B$&amp;#x3D;&amp;#x3D;由上面两个可以推导出：&amp;#x3D;&amp;#x3D;$I_E&amp;#x3D;βI_B+I_B$ ⇒ $I_E&amp;#x3D;(1+β)I_B≈I_"><!-- pwa--><meta name="apple-mobile-web-app-capable" content="寅虎青蛟的博客"><meta name="theme-color" content="var(--efu-main)"><meta name="apple-mobile-web-app-status-bar-style" content="var(--efu-main)"><link rel="bookmark" href="/img/avatar.jpg"><link rel="apple-touch-icon" href="/img/avatar.jpg" sizes="180x180"><script>console.log(' %c Solitude %c ' + '4.0.0' + ' %c https://github.com/everfu/hexo-theme-solitude',
+    'background:#35495e ; padding: 1px; border-radius: 3px 0 0 3px;  color: #fff',
+    'background:#ff9a9a ; padding: 1px; border-radius: 0 3px 3px 0;  color: #fff',
+    'background:unset ; padding: 1px; border-radius: 0 3px 3px 0;  color: #fff')
+</script><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="/katex/katex.min.css"><link rel="stylesheet" href="/css/custom-aplayer.css"><link rel="stylesheet" href="/assets/css/APlayer.min.css"><script>(()=>{
+        const parseConfig = (id) => {
+            const element = document.getElementById(id)
+            if (!element) return {}
+            try {
+                return JSON.parse(element.content?.textContent || element.textContent || '{}')
+            } catch (error) {
+                console.error('Invalid Solitude config:', error)
+                return {}
+            }
+        }
+        const saveToLocal = {
+            set: function setWithExpiry(key, value, ttl) {
+                if (ttl === 0)
+                    return
+                const now = new Date()
+                const expiryDay = ttl * 86400000
+                const item = {
+                    value: value,
+                    expiry: now.getTime() + expiryDay
+                }
+                localStorage.setItem(key, JSON.stringify(item))
+            },
+            get: function getWithExpiry(key) {
+                const itemStr = localStorage.getItem(key)
+
+                if (!itemStr) {
+                    return undefined
+                }
+                let item
+                try {
+                    item = JSON.parse(itemStr)
+                } catch (error) {
+                    localStorage.removeItem(key)
+                    return undefined
+                }
+                const now = new Date()
+
+                if (now.getTime() > item.expiry) {
+                    localStorage.removeItem(key)
+                    return undefined
+                }
+                return item.value
+            }
+        };
+        const resourceRequests = new Map()
+        const loadResource = (url, create) => {
+            const absoluteUrl = new URL(url, document.baseURI).href
+            if (resourceRequests.has(absoluteUrl)) return resourceRequests.get(absoluteUrl)
+            const request = new Promise((resolve, reject) => {
+                const element = create(absoluteUrl)
+                element.addEventListener('load', () => resolve(element), {once: true})
+                element.addEventListener('error', () => {
+                    resourceRequests.delete(absoluteUrl)
+                    reject(new Error('Unable to load ' + absoluteUrl))
+                }, {once: true})
+                document.head.appendChild(element)
+            })
+            resourceRequests.set(absoluteUrl, request)
+            return request
+        }
+        const api = window.Solitude || {}
+        window.Solitude = api
+        api.installLegacyAdapter = () => {
+            const aliases = {
+                utils: api,
+                sco: api,
+                GLOBAL_CONFIG: api.config
+            }
+            Object.entries(aliases).forEach(([name, value]) => {
+                if (name in window) return
+                Object.defineProperty(window, name, {
+                    configurable: true,
+                    enumerable: false,
+                    value
+                })
+            })
+        }
+        Object.defineProperties(api, {
+            config: {configurable: true, get: () => parseConfig('site-config')},
+            page: {configurable: true, get: () => parseConfig('config-diff')}
+        })
+        Object.assign(api, {
+            saveToLocal: saveToLocal,
+            loadStyle: (url, options = {}) => loadResource(url, href => {
+                const link = document.createElement('link')
+                link.rel = 'stylesheet'
+                link.href = href
+                if (options.id) link.id = options.id
+                return link
+            }),
+            loadScript: (url, options = {}) => {
+              if (url.includes('barrage')) api.installLegacyAdapter()
+              return loadResource(url, src => {
+                const script = document.createElement('script')
+                script.src = src
+                script.async = options.async !== false
+                Object.entries(options.attributes || {}).forEach(([key, value]) => script.setAttribute(key, value))
+                return script
+              })
+            },
+            addGlobalFn: (key, fn, name = false, parent = window) => {
+                const globalFn = parent.globalFn || {}
+                const keyObj = globalFn[key] || {}
+
+                if (name && keyObj[name]) return
+
+                name = name || Object.keys(keyObj).length
+                keyObj[name] = fn
+                globalFn[key] = keyObj
+                parent.globalFn = globalFn
+            },
+            addEventListenerPjax: (ele, event, fn, option = false) => {
+              ele.addEventListener(event, fn, option)
+              api.addGlobalFn('pjax', () => {
+                  ele.removeEventListener(event, fn, option)
+              })
+            },
+            diffDateFormat: (selector) => {
+                selector.forEach(item => {
+                    const date = new Date(item.getAttribute('datetime') || item.textContent);
+                    item.textContent = (date.getMonth() + 1).toString()+'/'+date.getDate().toString();
+                });
+            },
+        })
+        api.getCSS = (url, id = false) => api.loadStyle(url, {id})
+        api.getScript = (url, attr = {}) => api.loadScript(url, {attributes: attr})
+        api.on = (name, handler) => {
+            const eventName = 'solitude:' + name
+            document.addEventListener(eventName, handler)
+            return () => document.removeEventListener(eventName, handler)
+        }
+        api.navigate = url => api.pjax?.loadUrl ? api.pjax.loadUrl(url) : window.location.assign(url)
+    })()</script><!-- theme--><script>initTheme = () => {
+    let isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+    const cachedMode = Solitude.saveToLocal.get('theme');
+    if (cachedMode === undefined) {
+        const nowMode =
+            isDarkMode ? 'dark' : 'light'
+        document.documentElement.setAttribute('data-theme', nowMode);
+    } else {
+        document.documentElement.setAttribute('data-theme', cachedMode);
+    }
+    Solitude.rightMenu?.mode(cachedMode === 'dark' && isDarkMode)
+}
+initTheme()</script><template id="site-config">{"root":"/","algolia":null,"localsearch":{"preload":true,"path":"/search.xml"},"runtime":"2026-04-22 16:05:23","lazyload":{"enable":false,"error":"/img/error_load.avif"},"copyright":false,"highlight":{"limit":200,"expand":true,"copy":true,"syntax":"highlight.js"},"friend_links":{"async":false,"path":"/links.json","total":0,"placeholder":"","default_avatar":"/img/default_avatar.avif","more_url":"/links/","loading":"正在加载友链…","error":"友链加载失败，请稍后重试。","retry":"重新加载","random":"点击前往按钮进入随机一个友链，不保证跳转网站的安全性和可用性。本次随机到的是本站友链：⌈ ${name} ⌋","to":"前往","more":"更多","default_sort":"默认排序","random_sort":"随机排序","sort_label":"切换排序方式","scroll_left":"向左滚动","scroll_right":"向右滚动"},"random_posts":["2026/08/28/文章_13/","2026/08/27/文章_12/","2026/08/26/文章_11/","2026/08/24/文章_10/","2026/08/24/文章_7/","2026/08/24/文章_8/","2026/08/24/文章_9/","2026/08/24/文章_1/","2026/08/24/文章_3/","2026/08/24/文章_4/","2026/08/24/文章_5/","2026/08/24/文章_6/"],"randomlink":false,"feature_modules":{"search":"local","post_ai":false,"friend_links":false,"music":false,"right_menu":false,"translate":false,"covercolor":false},"lang":{"theme":{"dark":"已切换至深色模式","light":"已切换至浅色模式"},"copy":{"success":"复制成功","error":"复制失败"},"backtop":"返回顶部","time":{"day":"天前","hour":"小时前","just":"刚刚","min":"分钟前","month":"个月前"},"day":" 天","f12":"开发者模式已开启，请遵守 GPL 协议。","totalk":"无需删除空行，直接输入评论即可","search":{"empty":"找不到你查询的内容：${query}","hit":"找到 ${hits} 条结果，用时 ${time} 毫秒","placeholder":"输入关键词快速查找","count":"共 \u003cb>${count}\u003c/b> 条结果。","loading":"搜索中…"}},"aside":{"state":{"morning":"😊早上好，新的一天开始了😎","noon":"🤑午餐时间😍","afternoon":"🤗下午好🤩","night":"🤔早点休息🥰","goodnight":"😴晚安😵"},"witty_words":["你可以的","你一定可以的","祝你好运，陌生人"],"witty_comment":{"prefix":"好久不见，","back":"欢迎回来，"}},"covercolor":{"enable":false,"mode":"local","api":"https://api.qjqq.cn/api/Imgcolor?img=","time":43200000},"comment":false,"lightbox":null,"right_menu":false,"translate":false,"lure":false,"expire":false}</template><template id="config-diff">{"is_post":true,"is_page":false,"is_home":false,"page":"post","toc":true,"comment":false,"ai_text":false,"color":false}</template><meta name="generator" content="Hexo 8.1.2"></head><body id="body"><div id="console"><div class="console-content"><div class="console-card-group" data-solitude-action="onConsoleCardGroupClick" data-solitude-event="true"><div class="console-card-group-right"><div class="console-card tags" data-solitude-action="hideConsole"><div class="card-content"><div class="author-content-item-tips">标签</div><div class="author-content-item-title">探索感兴趣的内容</div></div><div class="card-tag-cloud"><a href="/tags/web%E5%89%8D%E7%AB%AF/">web前端<sup>1</sup></a><a href="/tags/%E5%B7%A5%E5%8E%82%E7%94%B5%E5%99%A8/">工厂电器<sup>5</sup></a><a href="/tags/%E5%B9%B3%E9%9D%A2%E5%90%91%E9%87%8F/">平面向量<sup>1</sup></a><a href="/tags/%E7%94%B5%E5%B7%A5%E5%9F%BA%E7%A1%80/">电工基础<sup>2</sup></a><a href="/tags/%E7%94%B5%E5%AD%90%E6%8A%80%E6%9C%AF/">电子技术<sup>3</sup></a></div></div><div class="console-card history" data-solitude-action="hideConsole"><ul class="card-archive-list"><li class="item"><a href="/archives/2026/08/"><span class="date">2026/08</span><div class="count-group"><span class="count">12</span><span class="unit">篇</span></div></a></li><li class="item"><a href="/archives/"><span class="date">全部文章</span><div class="count-group"><span class="count">12</span><span class="unit">篇</span></div></a></li></ul></div></div></div><div class="button-group"><div class="console-btn-item"><span class="darkmode_switchbutton" data-solitude-action="toggleTheme" title="昼夜切换" heotip="昼夜切换"><i class="solitude fas fa-circle-half-stroke"></i></span></div><div class="console-btn-item" id="consoleHideAside"><span class="asideSwitch" data-solitude-action="switchHideAside" title="侧边栏显示" heotip="侧边栏显示"><i class="solitude fas fa-arrows-left-right-to-line"></i></span></div></div></div><div class="console-mask" data-solitude-action="hideConsole"></div></div><div id="sidebar" style="zoom: 1;"><div id="menu-mask" style="display: none;"></div><div id="sidebar-menus"><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">12</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">7</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">5</div></a></div></div></div><span class="sidebar-menu-item-title">功能</span><div class="sidebar-menu-item"><span class="darkmode_switchbutton menu-child" data-solitude-action="toggleTheme"><i class="solitude fas fa-circle-half-stroke"></i><span>显示模式</span></span></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/" title="首页" heotip="首页"><span>首页</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);" title="文章" heotip="文章"><span>文章</span></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/" title="归档" heotip="归档"><i class="solitude  fas fa-folder-closed"></i><span>归档</span></a></li><li><a class="site-page child" href="/categories/" title="分类" heotip="分类"><i class="solitude  fas fa-clone"></i><span>分类</span></a></li><li><a class="site-page child" href="/tags/" title="标签" heotip="标签"><i class="solitude  fas fa-tags"></i><span>标签</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);" title="我的" heotip="我的"><span>我的</span></a><ul class="menus_item_child"><li><a class="site-page child" href="/about/" title="关于" heotip="关于"><i class="solitude  fas fa-user"></i><span>关于</span></a></li><li><a class="site-page child" href="/links/" title="友情链接" heotip="友情链接"><i class="solitude  fas fa-user-group"></i><span>友情链接</span></a></li></ul></div></div><span class="sidebar-menu-item-title">标签</span><div class="card-tags"><div class="card-tag-cloud"><a href="/tags/web%E5%89%8D%E7%AB%AF/">web前端<sup>1</sup></a><a href="/tags/%E5%B7%A5%E5%8E%82%E7%94%B5%E5%99%A8/">工厂电器<sup>5</sup></a><a href="/tags/%E5%B9%B3%E9%9D%A2%E5%90%91%E9%87%8F/">平面向量<sup>1</sup></a><a href="/tags/%E7%94%B5%E5%B7%A5%E5%9F%BA%E7%A1%80/">电工基础<sup>2</sup></a><a href="/tags/%E7%94%B5%E5%AD%90%E6%8A%80%E6%9C%AF/">电子技术<sup>3</sup></a></div></div></div></div><div><div class="needEndHide" id="rightside"><div class="rs_hide"><button class="translate" type="button" title="简繁转换" heotip="简繁转换">简</button><button class="mode" type="button" title="显示模式切换" heotip="显示模式切换" data-solitude-action="toggleTheme"><i class="fas fa-circle-half-stroke"></i></button></div><div class="rs_show"><button class="config" type="button" title="扩展" heotip="扩展" data-solitude-action="toggleTargetClass" data-solitude-target=".rs_hide"><i class="fas fa-gear"></i></button><button class="mobile toc" type="button" title="目录" heotip="目录" data-solitude-action="toggleTargetClass" data-solitude-target="#card-toc" data-solitude-class="open"><i class="fas fa-list"></i></button></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav class="show" id="nav" data-solitude-action="onNavBlankClickCloseConsole" data-solitude-event="true"><div id="nav-group"><div id="blog_name"><a href="/" title="返回博客主页" id="site-name" heotip="返回博客主页"><span class="title">寅虎青蛟的博客</span><i class="solitude fas fa-home"></i></a></div><div id="page-name-mask"><div id="page-name"><a id="page-name-text" data-solitude-action="toTop" title="返回顶部" heotip="返回顶部">三极管的分配和放大作用</a></div></div><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><span>首页</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span>文章</span></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="solitude  fas fa-folder-closed"></i><span>归档</span></a></li><li><a class="site-page child" href="/categories/"><i class="solitude  fas fa-clone"></i><span>分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="solitude  fas fa-tags"></i><span>标签</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span>我的</span></a><ul class="menus_item_child"><li><a class="site-page child" href="/about/"><i class="solitude  fas fa-user"></i><span>关于</span></a></li><li><a class="site-page child" href="/links/"><i class="solitude  fas fa-user-group"></i><span>友情链接</span></a></li></ul></div></div></div><div id="nav-left"></div><div id="nav-right"><div class="nav-button" id="search-button"><a class="site-page social-icon search" href="javascript:void(0);" title="搜索" heotip="搜索"><i class="solitude fas fa-magnifying-glass"></i></a></div><div class="nav-button" id="nav-totop" data-solitude-action="toTop" title="返回顶部" heotip="返回顶部"><a class="totopbtn"><i class="solitude fas fa-arrow-up"></i><span id="percent">0</span></a></div><div id="toggle-menu"><a class="site-page"><i class="solitude fas fa-bars"></i></a></div></div></div></nav><div class="post-cover-aside"><a class="post-cover-aside-link fancybox" href="/img/cover_7.jpg" target="_blank" rel="noopener" data-fancybox="images" data-caption="三极管的分配和放大作用" aria-label="三极管的分配和放大作用"><img class="post-cover-aside-img nolazyload" id="post-cover" src="/img/cover_7.jpg" alt="三极管的分配和放大作用"></a></div><div id="post-info"><div id="post-firstinfo"><div class="meta-firstline"><a class="post-meta-original" title="本文采用 原创 许可协议">原创</a><span class="post-meta-categories"><a class="post-meta-categories" href="/categories/%E7%94%B5%E5%AD%90/">电子</a></span><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E7%94%B5%E5%AD%90%E6%8A%80%E6%9C%AF/"><span class="tags-name tags-punctuation"><i class="solitude fas fa-hashtag"></i>电子技术</span></a></div></div></div></div><h1 class="post-title">三极管的分配和放大作用</h1><div id="post-meta"><div class="meta-secondline"><span class="post-meta-date" title="发布于 2026-08-24 16:30:18"><i class="post-meta-icon solitude fas fa-calendar-days"></i><time datetime="2026-08-24T08:30:18.000Z">2026-08-24T08:30:18.000Z</time></span><span class="post-meta-date" title="最后更新于 2026-08-26 10:33:32"><i class="post-meta-icon solitude fas fa-arrows-rotate"></i><time datetime="2026-08-26T02:33:32.137Z">2026-08-26T02:33:32.137Z</time></span><span class="post-meta-position" title="作者 IP 属地China"><i class="post-meta-icon solitude fas fa-location-dot"></i><span>China</span></span></div></div></div><div class="post-radius-bottom"></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content article-container"><h1 id="三极管的分配和放大作用"><a href="#三极管的分配和放大作用" class="headerlink" title="三极管的分配和放大作用"></a>三极管的分配和放大作用</h1><p>Hello,EveryBody.我是Cat，现在我们来说说三极管的分配和放大作用。</p>
+<hr>
+<h2 id="三极管的电流分配关系"><a href="#三极管的电流分配关系" class="headerlink" title="三极管的电流分配关系"></a>三极管的电流分配关系</h2><p>不要问为什么，直接上公式：</p>
+<blockquote>
+<p><strong>$I_E=I_C+I_B$</strong><br><strong>$I_C=βI_B$</strong><br>==由上面两个可以推导出：==<br><strong>$I_E=βI_B+I_B$</strong> ⇒ <strong>$I_E=(1+β)I_B≈I_B$</strong><br>那这是则么弄出来的呢，具体看下表</p>
+</blockquote>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>$I_B / mA$</th>
+<th>$-0.001$</th>
+<th>$0$</th>
+<th>$0.01$</th>
+<th>$0.02$</th>
+<th>$0.03$</th>
+<th>$0.04$</th>
+<th>$0.05$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$I_C / mA$</td>
+<td>$0.001$</td>
+<td>$0.01$</td>
+<td>$0.56$</td>
+<td>$1.14$</td>
+<td>$1.74$</td>
+<td>$2.33$</td>
+<td>$2.91$</td>
+</tr>
+<tr>
+<td>$I_E / mA$</td>
+<td>$0$</td>
+<td>$0.01$</td>
+<td>$0.57$</td>
+<td>$1.16$</td>
+<td>$1.77$</td>
+<td>$2.37$</td>
+<td>$2.96$</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>由于发射极(e)的<strong>电流</strong>==等于==集电极(c)的<strong>电流</strong>+基极的<strong>电流</strong>。用公式可以表示为：<br><strong>$I_E=I_C+I_B$</strong><br>然后基极(b)电流很小，所以集电极<strong>电流</strong>与发射极<strong>电流</strong>近似相等，用公式可以表示为：<br><strong>$I_C≈I_E$</strong></p>
+<p>对此，我们可以看出：<br>三极管放大的==本质==为用基极($B$)的小电流($I_B$)控制==大的==集电极($C$)的大电流($I_C$)</p>
+<p><strong>对了，还有几个情况需要我们注意：</strong></p>
+<ol>
+<li>通过集电结的反向电流称为集电极(c)-基极(b)的反向饱和电流。这个简称<strong>三极管的反向饱和电流</strong>，记作$I_{CBO}$。</li>
+<li>集电极(c)与发射极(e)之间的电流称为<strong>集电极发射极反向饱和电流</strong>，又称三极管的<strong>穿透电流</strong>，记作$I_{CEO}$。</li>
+<li>$I<em>{CEO}$越==大==，三极管<strong>温度稳定性==差==</strong>；<br>$I</em>{CEO}$越==小==，三极管<strong>温度稳定性==好==</strong>。</li>
+<li>$I_{CEO}$会随==温度==的<strong>升高</strong>而<strong>增大</strong>。</li>
+<li>==硅管==的$I_{CEO}$比==锗管==<strong>小很多</strong>。==硅管==的<strong>温度稳定性</strong>比==锗管==<em>好</em>。</li>
+</ol>
+<hr>
+<h2 id="三极管的电流放大作用"><a href="#三极管的电流放大作用" class="headerlink" title="三极管的电流放大作用"></a>三极管的电流放大作用</h2><p>当三极管的$I_B$有一微小变化时，就能引起$I_C$较大的变化，这种现象称为<strong>三极管的电流放大作用</strong><br>通常我们把$I_C$与$I_B$的变化的比值$β$用来表示，称为==共发射及交流电流放大系数==，简称<strong>交流$β$</strong>。<br>用公式表示为：<br>(\beta = \frac{\Delta I_C}{\Delta I_B})</p>
+<hr>
+<p>好了，以上就是今天的全部内容，再见。</p>
+</article><div class="post-copyright"><div class="post-copyright__author_group"><div class="post-copyright__author_img"><img class="post-copyright__author_img_front" src="/img/avatar.jpg"></div><div class="post-copyright__author_name">寅虎青蛟</div><div class="post-copyright__author_desc">记录技术与生活</div></div><div class="post-tools" id="post-tools"><div class="post-tools-left"><div id="quit-box" data-solitude-action="hideReward"></div></div></div><div class="post-copyright__notice"><span class="post-copyright-info">本文是原创文章，采用<a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans">CC BY-NC-SA 4.0</a>许可协议，完整转载请注明来自<a href="/">寅虎青蛟的博客</a></span></div></div><div class="post-tools-right"><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E7%94%B5%E5%AD%90%E6%8A%80%E6%9C%AF/"><span class="tags-punctuation"><i class="solitude fas fa-hashtag"></i>电子技术<span class="tagsPageCount">3</span></span></a></div></div></div><nav class="needEndHide pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2026/08/24/%E6%96%87%E7%AB%A0_10/"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">机床电路图的识读--CA6140车床电气控制线路原理图举例</div></div></a></div><div class="next-post pull-right"><a href="/2026/08/24/%E6%96%87%E7%AB%A0_8/"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">电源有载工作</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-content"><div class="card-info-avatar is-center"><div class="top-group"><div class="sayhi" id="sayhi" data-solitude-action="changeWittyWord"></div></div></div><div class="avatar"><img alt="头像" src="/img/avatar.jpg"></div><div class="description">这是我的博客</div><div class="bottom-group"><span class="left"><div class="name">寅虎青蛟</div><div class="desc">清醒的活在当下。</div></span><div class="social-icons is-center"><a class="social-icon" target="_blank" rel="noopener" href="https://github.com/codecat250704" title="GitHub" heotip="GitHub"><i class="solitude  fab fa-github"></i></a><a class="social-icon" href="mailto:你的邮箱@example.com" title="邮箱" heotip="邮箱"><i class="solitude  fas fa-envelope"></i></a></div></div></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="solitude fas fa-bars"></i><span>文章目录</span></div><div class="toc-content" id="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%89%E6%9E%81%E7%AE%A1%E7%9A%84%E5%88%86%E9%85%8D%E5%92%8C%E6%94%BE%E5%A4%A7%E4%BD%9C%E7%94%A8"><span class="toc-text">三极管的分配和放大作用</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E6%9E%81%E7%AE%A1%E7%9A%84%E7%94%B5%E6%B5%81%E5%88%86%E9%85%8D%E5%85%B3%E7%B3%BB"><span class="toc-text">三极管的电流分配关系</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E6%9E%81%E7%AE%A1%E7%9A%84%E7%94%B5%E6%B5%81%E6%94%BE%E5%A4%A7%E4%BD%9C%E7%94%A8"><span class="toc-text">三极管的电流放大作用</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="solitude fas fa-map"></i><span>最近发布</span></div><div class="aside-list"><a class="aside-list-item" href="/2026/08/28/%E6%96%87%E7%AB%A0_13/" title="机床电路图的识读--X62W卧式万能铣床电气控制线路原理图举例（3）"><div class="thumbnail"><img alt="机床电路图的识读--X62W卧式万能铣床电气控制线路原理图举例（3）" src="/img/cover_11.png"></div><div class="content"><span class="title" href="/2026/08/28/%E6%96%87%E7%AB%A0_13/" title="机床电路图的识读--X62W卧式万能铣床电气控制线路原理图举例（3）">机床电路图的识读--X62W卧式万能铣床电气控制线路原理图举例（3）</span><span class="categories" href="/2026/08/28/%E6%96%87%E7%AB%A0_13/">X62W</span></div></a><a class="aside-list-item" href="/2026/08/27/%E6%96%87%E7%AB%A0_12/" title="机床电路图的识读--X62W卧式万能铣床电气控制线路原理图举例（2）"><div class="thumbnail"><img alt="机床电路图的识读--X62W卧式万能铣床电气控制线路原理图举例（2）" src="/img/cover_11.png"></div><div class="content"><span class="title" href="/2026/08/27/%E6%96%87%E7%AB%A0_12/" title="机床电路图的识读--X62W卧式万能铣床电气控制线路原理图举例（2）">机床电路图的识读--X62W卧式万能铣床电气控制线路原理图举例（2）</span><span class="categories" href="/2026/08/27/%E6%96%87%E7%AB%A0_12/">X62W</span></div></a><a class="aside-list-item" href="/2026/08/26/%E6%96%87%E7%AB%A0_11/" title="机床电路图的识读--X62W卧式万能铣床电气控制线路原理图举例（1）"><div class="thumbnail"><img alt="机床电路图的识读--X62W卧式万能铣床电气控制线路原理图举例（1）" src="/img/cover_11.png"></div><div class="content"><span class="title" href="/2026/08/26/%E6%96%87%E7%AB%A0_11/" title="机床电路图的识读--X62W卧式万能铣床电气控制线路原理图举例（1）">机床电路图的识读--X62W卧式万能铣床电气控制线路原理图举例（1）</span><span class="categories" href="/2026/08/26/%E6%96%87%E7%AB%A0_11/">X62W</span></div></a><a class="aside-list-item" href="/2026/08/24/%E6%96%87%E7%AB%A0_10/" title="机床电路图的识读--CA6140车床电气控制线路原理图举例"><div class="thumbnail"><img alt="机床电路图的识读--CA6140车床电气控制线路原理图举例" src="/img/cover_9.jpg"></div><div class="content"><span class="title" href="/2026/08/24/%E6%96%87%E7%AB%A0_10/" title="机床电路图的识读--CA6140车床电气控制线路原理图举例">机床电路图的识读--CA6140车床电气控制线路原理图举例</span><span class="categories" href="/2026/08/24/%E6%96%87%E7%AB%A0_10/">CA6140</span></div></a><a class="aside-list-item" href="/2026/08/24/%E6%96%87%E7%AB%A0_7/" title="三极管的分配和放大作用"><div class="thumbnail"><img alt="三极管的分配和放大作用" src="/img/cover_7.jpg"></div><div class="content"><span class="title" href="/2026/08/24/%E6%96%87%E7%AB%A0_7/" title="三极管的分配和放大作用">三极管的分配和放大作用</span><span class="categories" href="/2026/08/24/%E6%96%87%E7%AB%A0_7/">电子</span></div></a></div></div></div></div></main><footer id="footer"><div id="st-footer"></div><div id="footer-bar"><div class="footer-bar-links"><div class="footer-bar-left"><div class="copyright">© 2026 By<a class="footer-bar-link" href="/" title="寅虎青蛟">寅虎青蛟</a></div><div class="beian-group"><a class="footer-bar-link" target="_blank" rel="noopener" href="https://hexo.io/" title="框架：Hexo" heotip="框架：Hexo">框架：Hexo</a><a class="footer-bar-link" target="_blank" rel="noopener" href="https://github.com/everfu/hexo-theme-solitude" title="主题：Solitude" heotip="主题：Solitude">主题：Solitude</a></div></div><div class="footer-bar-right"></div></div></div><div class="comment-barrage needEndHide"></div></footer></div><div><!-- Critical scripts loaded synchronously--><script src="/js/utils.js?v=4.0.0"></script><!-- Non-critical scripts loaded asynchronously--><script defer src="/js/third_party/waterfall.min.js?v=4.0.0"></script><script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js"></script><!-- Feature-specific scripts loaded asynchronously--><!-- UI enhancement scripts--><script defer src="https://cdn.jsdelivr.net/npm/node-snackbar@0.1.16/dist/snackbar.min.js"></script><!-- Music player scripts--><!-- Cover color processing scripts--><script>window.paceOptions = {
+  restartOnPushState: false
+}
+
+Solitude.addGlobalFn('pjaxSend', () => {
+  Pace.restart()
+}, 'pace_restart')
+</script><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><!-- Search functionality--><!-- Main module dynamically imports enabled first-party features.--><script type="module" src="/js/main.js?v=4.0.0"></script><div id="my-aplayer"></div><script src="/assets/js/APlayer.min.js"></script><script src="/js/my-aplayer.js"></script><script src="/katex/katex.min.js"></script><script src="/katex/contrib/auto-render.min.js"></script><script src="/js/render-math.js"></script><div class="js-pjax"></div></div><!-- pjax--><script>function initPjax() {
+    if (typeof Pjax === 'undefined') {
+        setTimeout(initPjax, 100);
+        return;
+    }
+
+    const instance = new Pjax({
+        elements: 'a:not([target="_blank"])',
+        selectors: ["title","#body-wrap","#site-config","meta[name=\"description\"]",".js-pjax","meta[property^=\"og:\"]","#config-diff",".rs_show",".rs_hide"],
+        cacheBust: false,
+        analytics: false,
+        scrollRestoration: false
+    })
+
+    // Pjax dispatches synthetic resize/scroll events on window after every selector switch.
+    // Use a Node target so injected listeners that call event.target.contains() remain compatible.
+    instance.onSwitch = function () {
+        this.state.numPendingSwitches--
+
+        if (this.state.numPendingSwitches === 0) {
+            document.dispatchEvent(new Event('resize', { bubbles: true }))
+            document.dispatchEvent(new Event('scroll', { bubbles: true }))
+            this.afterAllSwitches()
+        }
+    }
+
+    Solitude.pjax = instance;
+
+    document.querySelectorAll('script[data-pjax]').forEach(item => {
+        const newScript = document.createElement('script')
+        const content = item.text || item.textContent || item.innerHTML || ""
+        Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+        newScript.appendChild(document.createTextNode(content))
+        item.parentNode.replaceChild(newScript, item)
+    })
+
+    document.addEventListener('pjax:send', () => {
+        document.dispatchEvent(new CustomEvent('solitude:beforeNavigate'))
+        Solitude.disposePage?.()
+        Object.values(window.globalFn?.pjax || {}).forEach(dispose => dispose())
+        if (window.globalFn) window.globalFn.pjax = {}
+    })
+
+    document.addEventListener('pjax:complete', async () => {
+        await Solitude.refresh()
+
+        document.querySelectorAll('script[data-pjax]').forEach(item => {
+            const newScript = document.createElement('script')
+            const content = item.text || item.textContent || item.innerHTML || ""
+            Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+            newScript.appendChild(document.createTextNode(content))
+            item.parentNode.replaceChild(newScript, item)
+        })
+
+        Solitude.config.lazyload.enable && window.lazyLoadInstance?.update()
+        document.dispatchEvent(new CustomEvent('solitude:afterNavigate', {
+            detail: {page: Solitude.page}
+        }))
+
+    })
+
+    document.addEventListener('pjax:error', (e) => {
+        if (e.request.status === 404) {
+            Solitude.navigate('/404.html')
+        }
+    })
+}
+
+// 初始化 Pjax
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initPjax);
+} else {
+    initPjax();
+}</script><!-- google adsense--><div id="local-search"><div class="search-dialog" role="dialog" aria-modal="true" aria-labelledby="local-search-title"><nav class="search-nav"><span class="search-dialog-title" id="local-search-title">搜索</span><button class="search-close-button" type="button" aria-label="关闭搜索"><i class="solitude fas fa-xmark"></i></button></nav><div class="search-wrap"><div class="search-box"><input class="search-box-input" id="search-input" type="search" autocomplete="off" spellcheck="false" autocorrect="off" autocapitalize="off" placeholder="输入关键词快速查找" aria-label="输入关键词快速查找"></div><div id="search-suggestions" aria-label="热门搜索"></div><ul id="search-results" hidden></ul><div id="search-pagination"></div><div id="search-tips"></div></div></div><div id="search-mask"></div></div></body></html>
