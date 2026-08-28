@@ -128,33 +128,6 @@
     
     
     <entry>
-      <title>电源有载工作</title>
-      <link href="/2026/08/24/%E6%96%87%E7%AB%A0_8/"/>
-      <url>/2026/08/24/%E6%96%87%E7%AB%A0_8/</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="电源有载工作"><a href="#电源有载工作" class="headerlink" title="电源有载工作"></a>电源有载工作</h1><p>Hello,EveryBody.我是Cat，现在我们来说说电源有载工作</p><hr><h2 id="电源的有载工作"><a href="#电源的有载工作" class="headerlink" title="电源的有载工作"></a>电源的有载工作</h2><p><strong>全电路欧姆定律</strong><br>$ I= {E}/{R_0+R} $<br><strong>负载电阻两端的电压</strong><br>$U=RI$<br>由上面两个公式可以<strong>得出</strong>：<br>$ U=E- R_0 I$</p><blockquote><p>对此，我们可以得出结论：当<strong>电源电压</strong>小于电动势，两者之差为==电流通过电源内阻所产生的电压降==<strong>$R_0I$</strong>.<br>电源的==电流越大==，则电源==电压下降的越多==。</p></blockquote><hr><h2 id="功率与功率平衡"><a href="#功率与功率平衡" class="headerlink" title="功率与功率平衡"></a>功率与功率平衡</h2><p>把上面得出的公式$ U=E- R_0 I$的各项乘以电流$I$，可以得到<strong>功率平衡公式</strong>。<br>$ UI=EI- R_0 I^2$<br>$ P=P_E- \Delta P$</p><blockquote><p>式子里<br>$P_E=EI$—电源产生的功率<br>$\Delta P$—电源内阻上损耗的功率<br>$P=UI$—电源输出功率</p></blockquote><hr><h2 id="区分电源和负载"><a href="#区分电源和负载" class="headerlink" title="区分电源和负载"></a>区分电源和负载</h2><p>至于电源和负载的判别其实非常简单，我都不想多说了<br>其实<strong>提供电力，能量的叫做电源</strong>，<strong>接收电力，消耗电力的叫做负载</strong>。<br>接下来，我们举一个==饱受争议==的例子<br><strong>蓄电池</strong>和<strong>义务教育阶段科学课上的发电机</strong></p><h3 id="蓄电池"><a href="#蓄电池" class="headerlink" title="蓄电池"></a>蓄电池</h3><p>这个物品我们需要更具<strong>实际情况</strong>来判断</p><div class="table-container"><table><thead><tr><th>作用</th><th>状态</th></tr></thead><tbody><tr><td>用于电瓶车及其他地方的<br>给其他地方的负载供电的时候</td><td>==电源==</td></tr><tr><td>用于充电的时候，<br>有其他电源给予其电力的时候</td><td>==负载==</td></tr></tbody></table></div><h3 id="发电机"><a href="#发电机" class="headerlink" title="发电机"></a>发电机</h3><p>这个物品我们也需要更具<strong>实际情况</strong>来判断</p><div class="table-container"><table><thead><tr><th>作用</th><th>状态</th></tr></thead><tbody><tr><td>用于小灯泡及其他地方的<br>给其他地方的负载供电的时候<br>也就是发电的时候</td><td>==电源==</td></tr><tr><td>有其他电源给予其电力的时候<br><strong>不常见</strong></td><td>==负载==</td></tr></tbody></table></div><blockquote><p>事实上，所有的电源和负载都是要更具实际情况来确定的，有些时候是<strong>电源</strong>，有些时候是<strong>负载</strong>。这都是不确定的选项，所以实际情况的判断非常重要。</p></blockquote><hr><p>好了，以上就是今天的全部内容，再见。<br>更多精彩内容请访问 publicstudio.dpdns.org</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 电工 </category>
-          
-          <category> 欧姆定律 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 电工基础 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>三极管的分配和放大作用</title>
       <link href="/2026/08/24/%E6%96%87%E7%AB%A0_7/"/>
       <url>/2026/08/24/%E6%96%87%E7%AB%A0_7/</url>
@@ -174,6 +147,33 @@
         <tags>
             
             <tag> 电子技术 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>电源有载工作</title>
+      <link href="/2026/08/24/%E6%96%87%E7%AB%A0_8/"/>
+      <url>/2026/08/24/%E6%96%87%E7%AB%A0_8/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="电源有载工作"><a href="#电源有载工作" class="headerlink" title="电源有载工作"></a>电源有载工作</h1><p>Hello,EveryBody.我是Cat，现在我们来说说电源有载工作</p><hr><h2 id="电源的有载工作"><a href="#电源的有载工作" class="headerlink" title="电源的有载工作"></a>电源的有载工作</h2><p><strong>全电路欧姆定律</strong></p><script type="math/tex; mode=display">I= {E}/{R_0+R}</script><p><strong>负载电阻两端的电压</strong><br>$U=RI$<br>由上面两个公式可以<strong>得出</strong>：<br>$ U=E- R_0 I$</p><blockquote><p>对此，我们可以得出结论：当<strong>电源电压</strong>小于电动势，两者之差为==电流通过电源内阻所产生的电压降==<strong>$R_0I$</strong>.<br>电源的==电流越大==，则电源==电压下降的越多==。</p></blockquote><hr><h2 id="功率与功率平衡"><a href="#功率与功率平衡" class="headerlink" title="功率与功率平衡"></a>功率与功率平衡</h2><p>把上面得出的公式$ U=E- R_0 I$的各项乘以电流$I$，可以得到<strong>功率平衡公式</strong>。<br>$ UI=EI- R_0 I^2$<br>$ P=P_E- \Delta P$</p><blockquote><p>式子里<br>$P_E=EI$—电源产生的功率<br>$\Delta P$—电源内阻上损耗的功率<br>$P=UI$—电源输出功率</p></blockquote><hr><h2 id="区分电源和负载"><a href="#区分电源和负载" class="headerlink" title="区分电源和负载"></a>区分电源和负载</h2><p>至于电源和负载的判别其实非常简单，我都不想多说了<br>其实<strong>提供电力，能量的叫做电源</strong>，<strong>接收电力，消耗电力的叫做负载</strong>。<br>接下来，我们举一个==饱受争议==的例子<br><strong>蓄电池</strong>和<strong>义务教育阶段科学课上的发电机</strong></p><h3 id="蓄电池"><a href="#蓄电池" class="headerlink" title="蓄电池"></a>蓄电池</h3><p>这个物品我们需要更具<strong>实际情况</strong>来判断</p><div class="table-container"><table><thead><tr><th>作用</th><th>状态</th></tr></thead><tbody><tr><td>用于电瓶车及其他地方的<br>给其他地方的负载供电的时候</td><td>==电源==</td></tr><tr><td>用于充电的时候，<br>有其他电源给予其电力的时候</td><td>==负载==</td></tr></tbody></table></div><h3 id="发电机"><a href="#发电机" class="headerlink" title="发电机"></a>发电机</h3><p>这个物品我们也需要更具<strong>实际情况</strong>来判断</p><div class="table-container"><table><thead><tr><th>作用</th><th>状态</th></tr></thead><tbody><tr><td>用于小灯泡及其他地方的<br>给其他地方的负载供电的时候<br>也就是发电的时候</td><td>==电源==</td></tr><tr><td>有其他电源给予其电力的时候<br><strong>不常见</strong></td><td>==负载==</td></tr></tbody></table></div><blockquote><p>事实上，所有的电源和负载都是要更具实际情况来确定的，有些时候是<strong>电源</strong>，有些时候是<strong>负载</strong>。这都是不确定的选项，所以实际情况的判断非常重要。</p></blockquote><hr><p>好了，以上就是今天的全部内容，再见。<br>更多精彩内容请访问 publicstudio.dpdns.org</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 电工 </category>
+          
+          <category> 欧姆定律 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 电工基础 </tag>
             
         </tags>
       
@@ -205,37 +205,6 @@
         <tags>
             
             <tag> 工厂电器 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>关于态玻璃效果的web前端实现</title>
-      <link href="/2026/08/24/%E6%96%87%E7%AB%A0_1/"/>
-      <url>/2026/08/24/%E6%96%87%E7%AB%A0_1/</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="液态玻璃效果的web前端实现"><a href="#液态玻璃效果的web前端实现" class="headerlink" title="液态玻璃效果的web前端实现"></a>液态玻璃效果的web前端实现</h1><hr><p>Hello Everybody 我是Cat。今天我们来讲解Apple液态玻璃的实现，也是本站的创新点</p><hr><h2 id="什么是液态玻璃"><a href="#什么是液态玻璃" class="headerlink" title="什么是液态玻璃"></a>什么是液态玻璃</h2><p><strong>液态玻璃其实不是官方学名</strong><br>液态玻璃实际上是<strong>毛玻璃背景模糊</strong>。简单来说是一块背景图，上面蒙了一层半透明磨砂面。如图所示：<br><img src="/img/1_2.png" alt=""></p><p><strong>最终的效果如何</strong><br><img src="/img/1_1.png1.png" alt=""></p><hr><h2 id="如何实现"><a href="#如何实现" class="headerlink" title="如何实现"></a>如何实现</h2><ol><li>我们新建一个文件夹，名字叫<code>Frosted_glass</code>。</li><li>在里面创建如下所示的文件夹及文件</li></ol><figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">/</span><br><span class="line">├── index.html           # 【入口】液态玻璃的主入口</span><br><span class="line">│</span><br><span class="line">├── background.jpeg      # 【背景】全局唯一动态背景图（自己选择，后缀名不一样也行）</span><br><span class="line">│</span><br><span class="line">├── style.css            # 【样式】液态玻璃核心</span><br><span class="line"></span><br></pre></td></tr></table></figure><ol><li>index.html写最简单的盒子</li></ol><p><strong>要是连这个也不会证明你没有任何前端基础，建议去哔哩哔哩从头开始学</strong></p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">&quot;zh-CN&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>毛玻璃<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 引入外部 CSS 文件 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;style.css&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 为了看到毛玻璃效果，盒子后面必须要有背景内容 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;background&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;glass-box&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure><ol><li>style.css写毛玻璃</li></ol><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 给页面一个彩色背景，否则看不到毛玻璃的透光感 */</span></span><br><span class="line"><span class="selector-class">.background</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">100%</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">100vh</span>;</span><br><span class="line">    <span class="attribute">background</span>: blue;</span><br><span class="line">    <span class="attribute">display</span>: flex;</span><br><span class="line">    <span class="attribute">justify-content</span>: center;</span><br><span class="line">    <span class="attribute">align-items</span>: center;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.glass-box</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">300px</span>;</span><br><span class="line">    <span class="attribute">padding</span>: <span class="number">300px</span>; </span><br><span class="line">    </span><br><span class="line">    <span class="comment">/* 1. 透明 */</span></span><br><span class="line">    <span class="attribute">background</span>: transparent;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">/* 2. 背景模糊，产生磨砂玻璃效果 */</span></span><br><span class="line">    <span class="attribute">backdrop-filter</span>: <span class="built_in">blur</span>(<span class="number">12px</span>);</span><br><span class="line">    -webkit-<span class="attribute">backdrop-filter</span>: <span class="built_in">blur</span>(<span class="number">12px</span>); <span class="comment">/* 兼容 Safari */</span></span><br><span class="line">    </span><br><span class="line">    <span class="comment">/* 3. 边框：半透明白色，产生发光边缘 */</span></span><br><span class="line">    <span class="attribute">border</span>: <span class="number">1px</span> solid <span class="built_in">rgba</span>(<span class="number">255</span>, <span class="number">255</span>, <span class="number">255</span>, <span class="number">0.4</span>);</span><br><span class="line">    </span><br><span class="line">    <span class="comment">/* 4. 阴影：外部深邃 + 内边光 + 底高光反射 */</span></span><br><span class="line">    <span class="attribute">box-shadow</span>: </span><br><span class="line">        <span class="number">0</span> <span class="number">15px</span> <span class="number">35px</span> <span class="built_in">rgba</span>(<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0.25</span>),              <span class="comment">/* 投影，浮框 */</span></span><br><span class="line">        inset <span class="number">0</span> <span class="number">1px</span> <span class="number">0px</span> <span class="built_in">rgba</span>(<span class="number">255</span>, <span class="number">255</span>, <span class="number">255</span>, <span class="number">0.6</span>),     <span class="comment">/* 顶边光 */</span></span><br><span class="line">        inset <span class="number">0</span> -<span class="number">1px</span> <span class="number">0px</span> <span class="built_in">rgba</span>(<span class="number">255</span>, <span class="number">255</span>, <span class="number">255</span>, <span class="number">0.2</span>);    <span class="comment">/* 底边光 */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>用浏览器打开index.html就能看到毛玻璃效果了<br><img src="/img/1_image.png" alt=""><br>但是没有光泽，那么我们修改相关参数使其变得光泽</p><ol><li>加入背景图片，尽量花一点，效果更好，修改.background </li></ol><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.background</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">100%</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">100vh</span>;</span><br><span class="line">    <span class="comment">/* 注意：这里不再是 blue，而是引入你的背景图 */</span></span><br><span class="line">    <span class="attribute">background-image</span>: <span class="built_in">url</span>(<span class="string">&#x27;你的图片链接&#x27;</span>); </span><br><span class="line">    <span class="attribute">background-size</span>: cover;          <span class="comment">/* 保证图片铺满屏幕 */</span></span><br><span class="line">    <span class="attribute">background-position</span>: center;     <span class="comment">/* 图片居中显示 */</span></span><br><span class="line">    <span class="attribute">background-repeat</span>: no-repeat;    <span class="comment">/* 不平铺 */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ol><li>修改好后效果展示，这感觉不就来了吗<br><img src="/img/1_3.png" alt=""></li></ol><hr><p>以上就是今天的全部内容，如有错误请联系作者邮箱：xsh3304832000@163.com</p><hr>]]></content>
-      
-      
-      <categories>
-          
-          <category> apple </category>
-          
-          <category> 数码 </category>
-          
-          <category> 科技 </category>
-          
-          <category> 毛玻璃 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> web前端 </tag>
             
         </tags>
       
@@ -354,6 +323,37 @@
         <tags>
             
             <tag> 电子技术 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>关于态玻璃效果的web前端实现</title>
+      <link href="/2026/08/24/%E6%96%87%E7%AB%A0_1/"/>
+      <url>/2026/08/24/%E6%96%87%E7%AB%A0_1/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="液态玻璃效果的web前端实现"><a href="#液态玻璃效果的web前端实现" class="headerlink" title="液态玻璃效果的web前端实现"></a>液态玻璃效果的web前端实现</h1><hr><p>Hello Everybody 我是Cat。今天我们来讲解Apple液态玻璃的实现，也是本站的创新点</p><hr><h2 id="什么是液态玻璃"><a href="#什么是液态玻璃" class="headerlink" title="什么是液态玻璃"></a>什么是液态玻璃</h2><p><strong>液态玻璃其实不是官方学名</strong><br>液态玻璃实际上是<strong>毛玻璃背景模糊</strong>。简单来说是一块背景图，上面蒙了一层半透明磨砂面。如图所示：<br><img src="/img/1_2.png" alt=""></p><p><strong>最终的效果如何</strong><br><img src="/img/1_1.png1.png" alt=""></p><hr><h2 id="如何实现"><a href="#如何实现" class="headerlink" title="如何实现"></a>如何实现</h2><ol><li>我们新建一个文件夹，名字叫<code>Frosted_glass</code>。</li><li>在里面创建如下所示的文件夹及文件</li></ol><figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">/</span><br><span class="line">├── index.html           # 【入口】液态玻璃的主入口</span><br><span class="line">│</span><br><span class="line">├── background.jpeg      # 【背景】全局唯一动态背景图（自己选择，后缀名不一样也行）</span><br><span class="line">│</span><br><span class="line">├── style.css            # 【样式】液态玻璃核心</span><br><span class="line"></span><br></pre></td></tr></table></figure><ol><li>index.html写最简单的盒子</li></ol><p><strong>要是连这个也不会证明你没有任何前端基础，建议去哔哩哔哩从头开始学</strong></p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">&quot;zh-CN&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>毛玻璃<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 引入外部 CSS 文件 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;style.css&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 为了看到毛玻璃效果，盒子后面必须要有背景内容 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;background&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;glass-box&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure><ol><li>style.css写毛玻璃</li></ol><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 给页面一个彩色背景，否则看不到毛玻璃的透光感 */</span></span><br><span class="line"><span class="selector-class">.background</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">100%</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">100vh</span>;</span><br><span class="line">    <span class="attribute">background</span>: blue;</span><br><span class="line">    <span class="attribute">display</span>: flex;</span><br><span class="line">    <span class="attribute">justify-content</span>: center;</span><br><span class="line">    <span class="attribute">align-items</span>: center;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.glass-box</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">300px</span>;</span><br><span class="line">    <span class="attribute">padding</span>: <span class="number">300px</span>; </span><br><span class="line">    </span><br><span class="line">    <span class="comment">/* 1. 透明 */</span></span><br><span class="line">    <span class="attribute">background</span>: transparent;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">/* 2. 背景模糊，产生磨砂玻璃效果 */</span></span><br><span class="line">    <span class="attribute">backdrop-filter</span>: <span class="built_in">blur</span>(<span class="number">12px</span>);</span><br><span class="line">    -webkit-<span class="attribute">backdrop-filter</span>: <span class="built_in">blur</span>(<span class="number">12px</span>); <span class="comment">/* 兼容 Safari */</span></span><br><span class="line">    </span><br><span class="line">    <span class="comment">/* 3. 边框：半透明白色，产生发光边缘 */</span></span><br><span class="line">    <span class="attribute">border</span>: <span class="number">1px</span> solid <span class="built_in">rgba</span>(<span class="number">255</span>, <span class="number">255</span>, <span class="number">255</span>, <span class="number">0.4</span>);</span><br><span class="line">    </span><br><span class="line">    <span class="comment">/* 4. 阴影：外部深邃 + 内边光 + 底高光反射 */</span></span><br><span class="line">    <span class="attribute">box-shadow</span>: </span><br><span class="line">        <span class="number">0</span> <span class="number">15px</span> <span class="number">35px</span> <span class="built_in">rgba</span>(<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0.25</span>),              <span class="comment">/* 投影，浮框 */</span></span><br><span class="line">        inset <span class="number">0</span> <span class="number">1px</span> <span class="number">0px</span> <span class="built_in">rgba</span>(<span class="number">255</span>, <span class="number">255</span>, <span class="number">255</span>, <span class="number">0.6</span>),     <span class="comment">/* 顶边光 */</span></span><br><span class="line">        inset <span class="number">0</span> -<span class="number">1px</span> <span class="number">0px</span> <span class="built_in">rgba</span>(<span class="number">255</span>, <span class="number">255</span>, <span class="number">255</span>, <span class="number">0.2</span>);    <span class="comment">/* 底边光 */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>用浏览器打开index.html就能看到毛玻璃效果了<br><img src="/img/1_image.png" alt=""><br>但是没有光泽，那么我们修改相关参数使其变得光泽</p><ol><li>加入背景图片，尽量花一点，效果更好，修改.background </li></ol><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.background</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">100%</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">100vh</span>;</span><br><span class="line">    <span class="comment">/* 注意：这里不再是 blue，而是引入你的背景图 */</span></span><br><span class="line">    <span class="attribute">background-image</span>: <span class="built_in">url</span>(<span class="string">&#x27;你的图片链接&#x27;</span>); </span><br><span class="line">    <span class="attribute">background-size</span>: cover;          <span class="comment">/* 保证图片铺满屏幕 */</span></span><br><span class="line">    <span class="attribute">background-position</span>: center;     <span class="comment">/* 图片居中显示 */</span></span><br><span class="line">    <span class="attribute">background-repeat</span>: no-repeat;    <span class="comment">/* 不平铺 */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ol><li>修改好后效果展示，这感觉不就来了吗<br><img src="/img/1_3.png" alt=""></li></ol><hr><p>以上就是今天的全部内容，如有错误请联系作者邮箱：xsh3304832000@163.com</p><hr>]]></content>
+      
+      
+      <categories>
+          
+          <category> apple </category>
+          
+          <category> 数码 </category>
+          
+          <category> 科技 </category>
+          
+          <category> 毛玻璃 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> web前端 </tag>
             
         </tags>
       
